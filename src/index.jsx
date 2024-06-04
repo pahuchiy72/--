@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDom from 'react-dom/client';
+
 import { camelCase } from 'lodash-es';
 
 let str = 'Вітаю знову';
@@ -32,3 +35,8 @@ const numbArray = (a) => a.map((a) => a + a);
 let numb = [1, 3, 5, 9, 15];
 console.log(numb);
 console.log(numbArray(numb));
+
+const element = <h1>Знову Вітаю </h1>;
+
+const root = ReactDom.createRoot(document.getElementById('root'));
+root.render(element);
