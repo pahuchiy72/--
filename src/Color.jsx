@@ -34,7 +34,7 @@ export default class Color extends React.Component {
           style={{ color, backgroundColor }}
           onClick={this.changeColor}
         >
-          Змінити колір на : {color}
+          Змінити колір на : {color} та {backgroundColor}
         </button>
       </div>
     );
