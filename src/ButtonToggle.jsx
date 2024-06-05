@@ -3,34 +3,29 @@ import React from 'react';
 export default class ButtonToggle extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {
-      text: 'Натискай',
-    
-    };
+    this.state = { text: 'Натискай', backgroundColor: 'DarkGoldenRod' };
   }
-
-  handleOnClick = (e) => {
-    const text = e.target.innerHTML === 'Натискай' ? 'Натиснута' : 'Натискай';
-
-    this.setState({ text });
+  handleOnClick = () => {
+    const { text, backgroundColor } = this.state;
+    const isText = text === 'Натискай';
+    const isDarkGoldenRod = backgroundColor === 'DarkGoldenRod';
+    this.setState({
+      text: isText ? 'Вже натиснуто' : 'Натискай',
+      backgroundColor: isDarkGoldenRod ? 'DarkTurquoise' : 'DarkGoldenRod',
+    });
   };
 
   render() {
-    const { text } = this.state;
-    const { color } = this.state;
+    const { text, backgroundColor } = this.state;
+
     return (
       <button
         type="button"
         style={{
-            backgroundColor:'Magenta',
-          padding: '15px 32px',
-          textAlign: 'center',
-          textDecoration: 'none',
-          display: 'inline-block',
-          fontSize: '16px',
-          borderRadius: '20px',
-          border: 'none',
-          color,
+          backgroundColor,
+          borderRadius: '15px',
+          height: '50px',
+          width: '150px',
         }}
         onClick={this.handleOnClick}
       >

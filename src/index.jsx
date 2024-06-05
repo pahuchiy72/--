@@ -6,8 +6,8 @@ import Counter1 from './Counter1.jsx';
 import Color from './Color.jsx';
 import TemperatureConverter from './TemperatureConverter.jsx';
 import MyComponent from './MyComponent.jsx';
+import ButtonText from './ButtonText.jsx';
 import ButtonToggle from './ButtonToggle.jsx';
-import B from './B.jsx';
 
 
 function Welcome(props) {
@@ -39,7 +39,7 @@ function App() {
       <Greeting name="ЗСУ!!!" />
       <TemperatureConverter />
       <ButtonToggle />
-      <B />
+      <ButtonText />
       <Counter />
       <Counter1 />
       <Color />
