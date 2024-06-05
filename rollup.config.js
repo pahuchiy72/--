@@ -11,7 +11,7 @@ export default {
     format: 'iife',
   },
   plugins: [
-    nodeResolve(),
+    nodeResolve(['.js', '.jsx']),
     babel({ babelHelpers: 'bundled' }),
     commonjs(),
     replace({

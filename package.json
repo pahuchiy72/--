@@ -6,7 +6,7 @@
   "main": "dist/bundle.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dist/bundle.js",
+    "start": " dist/bundle.js",
     "build": "rollup -c -w",
     "lint": "eslint src --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write src"
