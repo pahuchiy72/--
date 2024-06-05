@@ -5,6 +5,7 @@ import Counter from './Counter.jsx';
 import Counter1 from './Counter1.jsx';
 import Color from './Color.jsx';
 import TemperatureConverter from './TemperatureConverter.jsx';
+import MyComponent from './MyComponent.jsx';
 
 
 function Welcome(props) {
@@ -38,6 +39,7 @@ function App() {
       <Counter />
       <Counter1 />
       <Color />
+      <MyComponent />
     </div>
   );
 }
