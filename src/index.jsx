@@ -18,6 +18,7 @@ import User from './User.jsx';
 import TeamList from './TeamList.jsx';
 import Posts from './Posts.jsx';
 import Joke from './Joke.jsx';
+import Compo from './Compo.jsx';
 
 function Welcome(props) {
   return <h1>Знову Вітаю {props.name} </h1>;
@@ -43,6 +44,7 @@ function App() {
     <div>
       <WelcomeComponent user={user} />
       <MyComponent />
+      <Compo />
       <User user={user} />
       <UserProfile user={user} />
       <ErrorComponent error={error} />
