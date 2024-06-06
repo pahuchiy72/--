@@ -38,6 +38,7 @@ const teams = [
 function App() {
   return (
     <div>
+      
       <WelcomeComponent user={user} />
       <MyComponent />
       <User user={user} />
