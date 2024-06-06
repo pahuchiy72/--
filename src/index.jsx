@@ -3,6 +3,7 @@ import ReactDom from 'react-dom/client';
 
 import Counter from './Counter.jsx';
 import Counter1 from './Counter1.jsx';
+import CounterFunc from './CounterFunc.jsx';
 import Color from './Color.jsx';
 import TemperatureConverter from './TemperatureConverter.jsx';
 import MyComponent from './MyComponent.jsx';
@@ -50,6 +51,7 @@ function App() {
       <ButtonText />
       <Counter />
       <Counter1 />
+      <CounterFunc />
       <Color />
       <TeamList teams={teams} />
     </div>
