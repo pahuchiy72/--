@@ -19,8 +19,9 @@ import Posts from './Posts.jsx';
 import Joke from './Joke.jsx';
 import Compo from './Compo.jsx';
 import UserInput from './UserInput.jsx';
-import Card from './Card.jsx';
+// import Card from './Card.jsx';
 import ModalContainer from './ModalContainer.jsx';
+import CardContainer from './CardContainer.jsx';
 
 
 function Welcome(props) {
@@ -67,13 +68,7 @@ function App() {
       <Posts />
       <Joke />
       <ModalContainer />
-      <Card title="Текст картки">
-        <p>Картка з текстом</p>
-      </Card>
-      <Card title="кнопка картки">
-        <button>Натискай</button>
-      </Card>
-
+      <CardContainer />
     </div>
   );
 }
