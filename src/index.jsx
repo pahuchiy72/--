@@ -13,6 +13,7 @@ import Greeting from './Greeting.jsx';
 import ErrorComponent from './ErrorComponent.jsx';
 import UserProfile from './UserProfile.jsx';
 import User from './User.jsx';
+ import TeamList from './TeamList.jsx';
 
 function Welcome(props) {
   return <h1>Знову Вітаю {props.name} </h1>;
@@ -26,13 +27,20 @@ const error = {
   message: 'Щось пішло не так?',
 };
 
+const teams = [
+  { id: 1, name: 'Бельгія', odds: 48.5 },
+  { id: 2, name: 'Словаччина', odds: 14.4 },
+  { id: 3, name: 'Румунія', odds: 18.3 },
+  { id: 4, name: 'Україна', odds: 26.0 },
+];
+
 function App() {
   return (
     <div>
       <WelcomeComponent user={user} />
       <MyComponent />
       <User user={user} />
-      <UserProfile user={user}/>
+      <UserProfile user={user} />
       <ErrorComponent error={error} />
       <Welcome name="Євгеній" />
       <Greeting name="Україні!!!" />
@@ -43,7 +51,7 @@ function App() {
       <Counter />
       <Counter1 />
       <Color />
-    
+      <TeamList teams={teams} />
     </div>
   );
 }
