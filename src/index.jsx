@@ -11,7 +11,7 @@ import ButtonToggle from './ButtonToggle.jsx';
 import WelcomeComponent from './WelcomeComponent.jsx';
 import Greeting from './Greeting.jsx';
 import ErrorComponent from './ErrorComponent.jsx';
-import UserProfile from '../UserProfile.jsx';
+import UserProfile from './UserProfile.jsx';
 import User from './User.jsx';
 
 function Welcome(props) {
