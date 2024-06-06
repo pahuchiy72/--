@@ -8,32 +8,22 @@ import TemperatureConverter from './TemperatureConverter.jsx';
 import MyComponent from './MyComponent.jsx';
 import ButtonText from './ButtonText.jsx';
 import ButtonToggle from './ButtonToggle.jsx';
-
+import WelcomeComponent from './WelcomeComponent.jsx';
+import Greeting from './Greeting.jsx';
 
 function Welcome(props) {
   return <h1>Знову Вітаю {props.name} </h1>;
 }
 
-class Greeting extends React.Component {
-  componentDidMount() {
-    console.log('компонент змонтувався');
-  }
-
-  componentDidUpdate() {
-    console.log('комронент обновився');
-  }
-
-  componentWillUnmount() {
-    console.log('компонент демонтувався');
-  }
-  render() {
-    return <h1 style={{ color: 'blue' , background: 'Gold'}}>Слава, {this.props.name}</h1>;
-  }
-}
+const user = {
+  name: 'Євгеній',
+  isLoggedIn: true,
+};
 
 function App() {
   return (
     <div>
+      <WelcomeComponent user={user} />
       <Welcome name="Євгеній" />
       <Greeting name="Україні!!!" />
       <Greeting name="ЗСУ!!!" />

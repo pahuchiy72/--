@@ -15,7 +15,7 @@ export default {
     babel({ babelHelpers: 'bundled' }),
     commonjs(),
     replace({
-      presetAssignment: false,
+      presetAssignment: true,
       'process.env.NODE_ENV': '"development"',
     }),
     nodePolyfills(),
