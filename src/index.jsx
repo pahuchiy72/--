@@ -10,14 +10,18 @@ import ButtonText from './ButtonText.jsx';
 import ButtonToggle from './ButtonToggle.jsx';
 import WelcomeComponent from './WelcomeComponent.jsx';
 import Greeting from './Greeting.jsx';
+import ErrorComponent from './ErrorComponent.jsx';
 
 function Welcome(props) {
   return <h1>Знову Вітаю {props.name} </h1>;
 }
-
 const user = {
-  name: 'Євгеній',
+  name: "М'ячмен",
   isLoggedIn: true,
+};
+
+const error = {
+  message: 'Щось пішло не так?',
 };
 
 function App() {
@@ -34,6 +38,7 @@ function App() {
       <Counter1 />
       <Color />
       <MyComponent />
+      <ErrorComponent error={error} />
     </div>
   );
 }
