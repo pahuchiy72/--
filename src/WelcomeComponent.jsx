@@ -1,6 +1,6 @@
 import React from 'react';
 import LoginButton from './LoginButton.jsx';
-// import User from './User.jsx';
+ 
 
 function WelcomeComponent({ user }) {
   return (
