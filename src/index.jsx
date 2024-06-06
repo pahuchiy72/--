@@ -20,7 +20,8 @@ import Joke from './Joke.jsx';
 import Compo from './Compo.jsx';
 import UserInput from './UserInput.jsx';
 import Card from './Card.jsx';
-import Modal from './Modal.jsx';
+import ModalContainer from './ModalContainer.jsx';
+
 
 function Welcome(props) {
   return <h1>Знову Вітаю {props.name} </h1>;
@@ -42,9 +43,7 @@ const teams = [
 ];
 
 function App() {
-  function handleConfirm() {
-    console.log('Підтвердити')
-  }
+
   return (
     <div>
       <WelcomeComponent user={user} />
@@ -67,30 +66,14 @@ function App() {
       <TeamList teams={teams} />
       <Posts />
       <Joke />
+      <ModalContainer />
       <Card title="Текст картки">
         <p>Картка з текстом</p>
       </Card>
       <Card title="кнопка картки">
         <button>Натискай</button>
       </Card>
-      <button>Підтвердіть свою дію</button>
-      <button>У вас сталася помилка</button>
-      <button>Оримайте інформацію</button>
-      <Modal
-        title="Підтвердіть дію"
-        message="ви впевнені в цій дії?"
-        onClose={handleConfirm}
-      />
-      <Modal
-        title="Помилка"
-        message="щось пішло не так?"
-        onClose={handleConfirm}
-      />
-      <Modal
-        title="Інформація"
-        message="отримайте інформацію"
-        onClose={handleConfirm}
-      />
+
     </div>
   );
 }
