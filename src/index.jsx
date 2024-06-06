@@ -11,6 +11,7 @@ import ButtonToggle from './ButtonToggle.jsx';
 import WelcomeComponent from './WelcomeComponent.jsx';
 import Greeting from './Greeting.jsx';
 import ErrorComponent from './ErrorComponent.jsx';
+import UserProfile from '../UserProfile.jsx';
 
 function Welcome(props) {
   return <h1>Знову Вітаю {props.name} </h1>;
@@ -38,6 +39,7 @@ function App() {
       <Counter1 />
       <Color />
       <MyComponent />
+      <UserProfile user={user}/>
       <ErrorComponent error={error} />
     </div>
   );

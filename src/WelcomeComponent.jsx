@@ -9,9 +9,6 @@ function WelcomeComponent({ user }) {
       {user.isLoggedIn ? <div>Ласкаво прошу, {user.name}</div> : null}
     </div>
   );
-  // if (user.isLoggedIn) {
-  //   return <div>Ласкаво просимо, {user.name}</div>;
-  // }
-  // return <button>Логін</button>
+ 
 }
 export default WelcomeComponent;
