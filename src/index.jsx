@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDom from 'react-dom/client';
- 
 
 import Counter from './Counter.jsx';
 import Counter1 from './Counter1.jsx';
@@ -20,6 +19,7 @@ import Posts from './Posts.jsx';
 import Joke from './Joke.jsx';
 import Compo from './Compo.jsx';
 import UserInput from './UserInput.jsx';
+import Card from './Card.jsx';
 
 function Welcome(props) {
   return <h1>Знову Вітаю {props.name} </h1>;
@@ -63,6 +63,12 @@ function App() {
       <TeamList teams={teams} />
       <Posts />
       <Joke />
+      <Card title="Текст картки">
+        <p>Картка з текстом</p>
+      </Card>
+      <Card title="кнопка картки">
+        <button>Натискай</button>
+      </Card>
     </div>
   );
 }
