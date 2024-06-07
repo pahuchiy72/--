@@ -19,10 +19,10 @@ import Posts from './Posts.jsx';
 import Joke from './Joke.jsx';
 import Compo from './Compo.jsx';
 import UserInput from './UserInput.jsx';
-// import Card from './Card.jsx';
+import ThemeContext from './context/theme.js';
 import ModalContainer from './ModalContainer.jsx';
 import CardContainer from './CardContainer.jsx';
-
+import Toolbar from './components/Toolbar.jsx';
 
 function Welcome(props) {
   return <h1>Знову Вітаю {props.name} </h1>;
@@ -44,9 +44,11 @@ const teams = [
 ];
 
 function App() {
-
   return (
     <div>
+      <ThemeContext.Provider value="lingt">
+        <Toolbar />
+     
       <WelcomeComponent user={user} />
       <MyComponent />
       <Compo />
@@ -68,7 +70,8 @@ function App() {
       <Posts />
       <Joke />
       <ModalContainer />
-      <CardContainer />
+      <CardContainer /> 
+      </ThemeContext.Provider>
     </div>
   );
 }
