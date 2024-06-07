@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDom from 'react-dom/client';
-
+ 
 import Counter from './Counter.jsx';
 import Counter1 from './Counter1.jsx';
 import CounterFunc from './CounterFunc.jsx';
+import CounterFunc2 from './CounterFunc2.jsx';
 import Color from './Color.jsx';
 import TemperatureConverter from './TemperatureConverter.jsx';
 import MyComponent from './MyComponent.jsx';
@@ -22,7 +23,7 @@ import UserInput from './UserInput.jsx';
 import ThemeContext from './context/theme.js';
 import ModalContainer from './ModalContainer.jsx';
 import CardContainer from './CardContainer.jsx';
-import Toolbar from './components/Toolbar.jsx';
+import Toolbar from './Toolbar.jsx';
 
 function Welcome(props) {
   return <h1>Знову Вітаю {props.name} </h1>;
@@ -44,11 +45,14 @@ const teams = [
 ];
 
 function App() {
+
+
   return (
     <div>
-      <ThemeContext.Provider value="lingt">
+      <ThemeContext.Provider value={'dark'}>
+    
         <Toolbar />
-     
+       </ThemeContext.Provider>
       <WelcomeComponent user={user} />
       <MyComponent />
       <Compo />
@@ -65,13 +69,14 @@ function App() {
       <Counter />
       <Counter1 />
       <CounterFunc />
+      <CounterFunc2 />
       <Color />
       <TeamList teams={teams} />
       <Posts />
       <Joke />
       <ModalContainer />
       <CardContainer /> 
-      </ThemeContext.Provider>
+    
     </div>
   );
 }
