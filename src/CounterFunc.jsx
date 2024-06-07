@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 function CounterFunc() {
   const [count, setCount] = useState(0);
-const [decremehtCount, setDecremehtCount] = useState(0);
+  const [decremehtCount, setDecremehtCount] = useState(0);
 
   const increment = () => {
     setCount(count + 1);
