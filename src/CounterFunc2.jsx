@@ -12,7 +12,7 @@ function CounterFunc2() {
   };
 
   return (
-    <div className='лічильник'>
+    <div className='counter'>
      
       <button className='counter-button'
         style={{

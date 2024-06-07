@@ -5,6 +5,7 @@ import Counter from './Counter.jsx';
 import Counter1 from './Counter1.jsx';
 import CounterFunc from './CounterFunc.jsx';
 import CounterFunc2 from './CounterFunc2.jsx';
+import CounterReducer from './CounterReducer.jsx';
 import Color from './Color.jsx';
 import TemperatureConverter from './TemperatureConverter.jsx';
 import MyComponent from './MyComponent.jsx';
@@ -24,6 +25,7 @@ import ThemeContext from './context/theme.js';
 import ModalContainer from './ModalContainer.jsx';
 import CardContainer from './CardContainer.jsx';
 import Toolbar from './Toolbar.jsx';
+
 
 function Welcome(props) {
   return <h1>Знову Вітаю {props.name} </h1>;
@@ -70,6 +72,7 @@ function App() {
       <Counter1 />
       <CounterFunc />
       <CounterFunc2 />
+      <CounterReducer />
       <Color />
       <TeamList teams={teams} />
       <Posts />
