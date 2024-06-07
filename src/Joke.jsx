@@ -13,7 +13,7 @@ function Joke() {
 
   return (
     <div>
-      <p>Привітання, {user.name}</p>
+      <p>Привітання, {user.names}</p>
       <p>Жарт про Чака Норріса: {data.value}</p>
     </div>
   );

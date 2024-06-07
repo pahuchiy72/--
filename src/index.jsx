@@ -28,6 +28,7 @@ import ThemeContext from './context/theme.js';
 import ModalContainer from './ModalContainer.jsx';
 import CardContainer from './CardContainer.jsx';
 import Toolbar from './Toolbar.jsx';
+import Footer from './Footer.jsx';
 
 function Welcome(props) {
   return <h1>Знову Вітаю {props.name} </h1>;
@@ -50,7 +51,7 @@ const teams = [
 
 function App() {
   const [user , setUser] = useState({
-    name: 'Євген',
+    names: 'Євген',
     email: 'pahuchiy72@ukr.net',
     preferences: {
       theme: 'світла',
@@ -68,7 +69,7 @@ function App() {
       <Greeting name="ЗСУ!!!" />
       
 
-      </UserContext.Provider>
+     
       <BrowserRouter>
         <nav>
           <ul>
@@ -150,7 +151,7 @@ function App() {
               <Link to="/userInput">Приклад Форми</Link>
             </li>
             <li>
-              <Link to="/buttonToggle">Кнопка складніша</Link>
+              <Link to="/footer">Уподобання користувача</Link>
             </li>
           </ul>
         </nav>
@@ -158,6 +159,7 @@ function App() {
           <Route path="/modal" element={<ModalContainer />} />
           <Route path="/card" element={<CardContainer />} />
           <Route path="/userInput" element={<UserInput />} />
+          <Route path="/footer" element={<Footer />} />
         </Routes>
       </BrowserRouter>
       <BrowserRouter>
@@ -203,9 +205,10 @@ function App() {
       <ThemeContext.Provider value={'dark'}>
         <Toolbar />
       </ThemeContext.Provider>
+      </UserContext.Provider>
     </div>
   );
 }
 
 const root = ReactDom.createRoot(document.getElementById('root'));
-root.render(App());
+root.render(<App />);
