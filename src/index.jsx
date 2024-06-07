@@ -49,6 +49,11 @@ const teams = [
 function App() {
   return (
     <div>
+      <WelcomeComponent user={user} />
+      <ErrorComponent error={error} />
+      <Welcome name="Євгеній" />
+      <Greeting name="Україні!!!" />
+      <Greeting name="ЗСУ!!!" />
       <BrowserRouter>
         <nav>
           <ul>
@@ -110,7 +115,6 @@ function App() {
             <li>
               <Link to="/joke">Жарти про Чака Норріса</Link>
             </li>
-      
           </ul>
         </nav>
         <Routes>
@@ -137,7 +141,7 @@ function App() {
         </nav>
         <Routes>
           <Route path="/modal" element={<ModalContainer />} />
-          <Route path="/card" element={ <CardContainer />} />
+          <Route path="/card" element={<CardContainer />} />
           <Route path="/userInput" element={<UserInput />} />
         </Routes>
       </BrowserRouter>
@@ -153,11 +157,10 @@ function App() {
             <li>
               <Link to="/user">Приклади входу</Link>
             </li>
-        
           </ul>
         </nav>
         <Routes>
-          <Route path="compo" element={ <Compo />} />
+          <Route path="compo" element={<Compo />} />
           <Route path="/userProfile" element={<UserProfile user={user} />} />
           <Route path="/user" element={<User user={user} />} />
         </Routes>
@@ -174,34 +177,17 @@ function App() {
             <li>
               <Link to="/user">Приклади входу</Link>
             </li>
-        
           </ul>
         </nav>
         <Routes>
           <Route path="list" element={<TeamList teams={teams} />} />
-          <Route path="/temperature" element={ <TemperatureConverter />} />
+          <Route path="/temperature" element={<TemperatureConverter />} />
           <Route path="/user" element={<User user={user} />} />
         </Routes>
       </BrowserRouter>
       <ThemeContext.Provider value={'dark'}>
         <Toolbar />
       </ThemeContext.Provider>
-      <WelcomeComponent user={user} />
-
-     
-      
-      
-   
-      <ErrorComponent error={error} />
-      <Welcome name="Євгеній" />
-      <Greeting name="Україні!!!" />
-      <Greeting name="ЗСУ!!!" />
-     
-
-      
-
-      
-     
     </div>
   );
 }
