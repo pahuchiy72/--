@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDom from 'react-dom/client';
 import { BrowserRouter, Route, Link, Routes } from 'react-router-dom';
 
@@ -17,11 +17,13 @@ import Greeting from './Greeting.jsx';
 import ErrorComponent from './ErrorComponent.jsx';
 import UserProfile from './UserProfile.jsx';
 import User from './User.jsx';
+import UserInput from './UserInput.jsx';
+import UserContext from './context/user.js';
 import TeamList from './TeamList.jsx';
 import Posts from './Posts.jsx';
 import Joke from './Joke.jsx';
 import Compo from './Compo.jsx';
-import UserInput from './UserInput.jsx';
+
 import ThemeContext from './context/theme.js';
 import ModalContainer from './ModalContainer.jsx';
 import CardContainer from './CardContainer.jsx';
@@ -47,13 +49,26 @@ const teams = [
 ];
 
 function App() {
+  const [user , setUser] = useState({
+    name: 'Євген',
+    email: 'pahuchiy72@ukr.net',
+    preferences: {
+      theme: 'світла',
+      language: 'українська',
+    },
+
+  })
   return (
     <div>
+      <UserContext.Provider value={user}>
       <WelcomeComponent user={user} />
       <ErrorComponent error={error} />
       <Welcome name="Євгеній" />
       <Greeting name="Україні!!!" />
       <Greeting name="ЗСУ!!!" />
+      
+
+      </UserContext.Provider>
       <BrowserRouter>
         <nav>
           <ul>

@@ -1,5 +1,9 @@
 import useFetch from './hooks/useFetch';
+import UserContext from './context/user';
+import { useContext } from 'react';
+
 function Joke() {
+  const user = useContext(UserContext);
   const { data, loading, error } = useFetch(
     'https://api.chucknorris.io/jokes/random'
   );
@@ -9,7 +13,8 @@ function Joke() {
 
   return (
     <div>
-      <p>kkk: {data.value}</p>
+      <p>Привітання, {user.name}</p>
+      <p>Жарт про Чака Норріса: {data.value}</p>
     </div>
   );
 }
