@@ -52,7 +52,7 @@ const teams = [
 function App() {
   const [colorTheme, setColorTheme] = useState('light');
   const toogleTheme = () => {
-    const newTheme = colorTheme  === 'dark' ? 'light' : 'dark';
+    const newTheme = colorTheme === 'dark' ? 'light' : 'dark';
     setColorTheme(newTheme);
   };
   const [user, setUser] = useState({
@@ -184,28 +184,27 @@ function App() {
             <Route path="/user" element={<User user={user} />} />
           </Routes>
         </BrowserRouter>
-        <BrowserRouter>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/list">Чемпіонат Європи</Link>
-              </li>
-              <li>
-                <Link to="/temperature">Конвектор температури</Link>
-              </li>
-              <li>
-                <Link to="/user">Приклади входу</Link>
-              </li>
-            </ul>
-          </nav>
-          <Routes>
-            <Route path="list" element={<TeamList teams={teams} />} />
-            <Route path="/temperature" element={<TemperatureConverter />} />
-            <Route path="/user" element={<User user={user} />} />
-          </Routes>
-        </BrowserRouter>
         <ThemeContext.Provider value={colorTheme}>
-          <Toolbar />
+          <BrowserRouter>
+            <nav>
+              <ul>
+                <li>
+                  <Link to="/list">Чемпіонат Європи</Link>
+                </li>
+                <li>
+                  <Link to="/temperature">Конвектор температури</Link>
+                </li>
+                <li>
+                  <Link to="/tolbar">Приклад ThemeContext зміна теми </Link>
+                </li>
+              </ul>
+            </nav>
+            <Routes>
+              <Route path="list" element={<TeamList teams={teams} />} />
+              <Route path="/temperature" element={<TemperatureConverter />} />
+              <Route path="/tolbar" element={<Toolbar />} />
+            </Routes>
+          </BrowserRouter>
           <button type="button" onClick={toogleTheme}>
             Панель інструментів
           </button>
