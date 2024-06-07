@@ -1,18 +1,10 @@
 import { useContext, useState } from 'react';
-import ThemeContext from './context/theme'; 
+import ThemeContext from './context/theme';
+import ShowTheme from './ShowTheme.jsx';
 
 export default function Toolbar() {
   const theme = useContext(ThemeContext);
-  const [text, setText] = useState('темна');
-  // const [colorTheme, setColorTheme] = useState('light');
 
-  const toogle = () => {
-    setText(!text);
-  };
-  // const toogleTheme = () => {
-  //   const newTheme = colorTheme  === 'dark' ? 'light' : 'dark';
-  //   setColorTheme(newTheme);
-  // };
   const styles = {
     display: 'flex',
     justifyContent: 'center',
@@ -24,14 +16,7 @@ export default function Toolbar() {
 
   return (
     <div style={styles}>
-     <button type="button" onClick={toogle}>
-        Панель інструментів {text === 'темна' ? 'світла' : 'темна'}
-      </button>
+      <ShowTheme />
     </div>
   );
 }
-// const [toogleTheme, setToogleTheme] = useState('light');
-// const changeTheme = () => {
-//   const newTheme = toogleTheme === 'dark' ? 'light' : 'dark';
-//   setToogleTheme(newTheme);
-// }
