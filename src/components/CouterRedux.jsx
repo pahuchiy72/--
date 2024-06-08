@@ -35,7 +35,7 @@ function CounterRedux() {
 
   return (
     <div>
-      <p>рахувати : {counter}</p>
+      <p>Рахувати : {counter}</p>
       <button type="button" onClick={() => dispatch(addOne())}>
         Додати 1
       </button>
