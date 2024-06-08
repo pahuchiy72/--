@@ -1,5 +1,5 @@
-import useFetch from './hooks/useFetch';
-import UserContext from './context/user';
+import useFetch from '../hooks/useFetch';
+import UserContext from '../context/user';
 import { useContext } from 'react';
 
 function Joke() {

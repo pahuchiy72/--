@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import ThemeContext from './context/theme';
+import ThemeContext from '../context/theme.js';
 import ShowTheme from './ShowTheme.jsx';
 
 export default function Toolbar() {

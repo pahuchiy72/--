@@ -1,42 +1,43 @@
 import React, { useState } from 'react';
 import ReactDom from 'react-dom/client';
 import { BrowserRouter, Route, Link, Routes } from 'react-router-dom';
+// import { Provider } from 'react-redux';
 
-import Counter from './Counter.jsx';
-import Counter1 from './Counter1.jsx';
-import CounterFunc from './CounterFunc.jsx';
-import CounterFunc2 from './CounterFunc2.jsx';
-import CounterReducers from './CounterReducers.jsx';
-// import { CounterRedux } from './CouterRedux.jsx';
-import Color from './Color.jsx';
-import TemperatureConverter from './TemperatureConverter.jsx';
-import MyComponent from './MyComponent.jsx';
-import ButtonText from './ButtonText.jsx';
-import ButtonToggle from './ButtonToggle.jsx';
-import WelcomeComponent from './WelcomeComponent.jsx';
-import Greeting from './Greeting.jsx';
-import ErrorComponent from './ErrorComponent.jsx';
-import UserProfile from './UserProfile.jsx';
-import User from './User.jsx';
-import UserInput from './UserInput.jsx';
+import Counter from './components/Counter.jsx';
+import Counter1 from './components/Counter1.jsx';
+import CounterFunc from './components/CounterFunc.jsx';
+import CounterFunc2 from './components/CounterFunc2.jsx';
+import CounterReducers from './components/CounterReducers.jsx';
+// import { CounterRedux } from './components/CouterRedux.jsx';
+import Color from './components/Color.jsx';
+import TemperatureConverter from './components/TemperatureConverter.jsx';
+import MyComponent from './components/MyComponent.jsx';
+import ButtonText from './components/ButtonText.jsx';
+import ButtonToggle from './components/ButtonToggle.jsx';
+import WelcomeComponent from './components/WelcomeComponent.jsx';
+import Greeting from './components/Greeting.jsx';
+import ErrorComponent from './components/ErrorComponent.jsx';
+import UserProfile from './components/UserProfile.jsx';
+import User  from './components/User.jsx';
+import UserInput from './components/UserInput.jsx';
 import UserContext from './context/user.js';
-import TeamList from './TeamList.jsx';
-import Posts from './Posts.jsx';
-import Joke from './Joke.jsx';
-import Compo from './Compo.jsx';
+import TeamList from './components/TeamList.jsx';
+import Posts from './components/Posts.jsx';
+import Joke from './components/Joke.jsx';
+import Compo from './components/Compo.jsx';
 // import store from './store.js';
 import ThemeContext from './context/theme.js';
-import ModalContainer from './ModalContainer.jsx';
-import CardContainer from './CardContainer.jsx';
-import Toolbar from './Toolbar.jsx';
-import Footer from './Footer.jsx';
-// import { Provider } from 'react-redux';
+import ModalContainer from './components/ModalContainer.jsx';
+import CardContainer from './components/CardContainer.jsx';
+import Toolbar from './components/Toolbar.jsx';
+import Footer from './components/Footer.jsx';
+
  
 
 function Welcome(props) {
   return <h1>Знову Вітаю {props.name} </h1>;
 }
-const user = {
+const users = {
   name: "М'ячмен",
   isLoggedIn: true,
 };
