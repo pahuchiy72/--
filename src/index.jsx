@@ -9,7 +9,7 @@ import CounterFunc from './components/CounterFunc.jsx';
 import CounterFunc2 from './components/CounterFunc2.jsx';
 import CounterReducers from './components/CounterReducers.jsx';
 import { CounterRedux } from './components/CouterRedux.jsx';
-// import Color from './components/Color.jsx';
+ 
 import TemperatureConverter from './components/TemperatureConverter.jsx';
 import MyComponent from './components/MyComponent.jsx';
 import ButtonText from './components/ButtonText.jsx';
@@ -22,8 +22,7 @@ import User from './components/User.jsx';
 import UserInput from './components/UserInput.jsx';
 import UserContext from './context/user.js';
 import TeamList from './components/TeamList.jsx';
-// import Posts from './components/Posts.jsx';
-// import Joke from './components/Joke.jsx';
+ 
 import Compo from './components/Compo.jsx';
 import store from './store.js';
 import ThemeContext from './context/theme.js';
