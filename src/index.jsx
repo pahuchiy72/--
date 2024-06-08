@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import ReactDom from 'react-dom/client';
 import { BrowserRouter, Route, Link, Routes } from 'react-router-dom';
-// import { Provider } from 'react-redux';
+import { Provider } from 'react-redux';
 
 import Counter from './components/Counter.jsx';
 import Counter1 from './components/Counter1.jsx';
 import CounterFunc from './components/CounterFunc.jsx';
 import CounterFunc2 from './components/CounterFunc2.jsx';
 import CounterReducers from './components/CounterReducers.jsx';
-// import { CounterRedux } from './components/CouterRedux.jsx';
+import { CounterRedux } from './components/CouterRedux.jsx';
 import Color from './components/Color.jsx';
 import TemperatureConverter from './components/TemperatureConverter.jsx';
 import MyComponent from './components/MyComponent.jsx';
@@ -25,7 +25,7 @@ import TeamList from './components/TeamList.jsx';
 import Posts from './components/Posts.jsx';
 import Joke from './components/Joke.jsx';
 import Compo from './components/Compo.jsx';
-// import store from './store.js';
+import store from './store.js';
 import ThemeContext from './context/theme.js';
 import ModalContainer from './components/ModalContainer.jsx';
 import CardContainer from './components/CardContainer.jsx';
@@ -69,7 +69,7 @@ function App() {
   });
   return (
     <div>
-      {/* <Provider store={store}> */}
+      <Provider store={store}>
         <UserContext.Provider value={user}>
           <WelcomeComponent user={user} />
           <ErrorComponent error={error} />
@@ -95,6 +95,9 @@ function App() {
                 <li>
                   <Link to="/counterReducers">Лічильник на Reducer</Link>
                 </li>
+                <li>
+                  <Link to="/counterRedux">Лічильник на п'ять кнопок</Link>
+                </li>
               </ul>
             </nav>
             <Routes>
@@ -103,6 +106,7 @@ function App() {
               <Route path="/counterFun" element={<CounterFunc />} />
               <Route path="/counterF2" element={<CounterFunc2 />} />
               <Route path="/counterReducers" element={<CounterReducers />} />
+              <Route path="/counterRedux" element={<CounterRedux />} />
             </Routes>
           </BrowserRouter>
           <BrowserRouter>
@@ -217,9 +221,9 @@ function App() {
               Панель інструментів
             </button>
           </ThemeContext.Provider>
-          {/* <CounterRedux /> */}
+          
         </UserContext.Provider>
-      {/* </Provider> */}
+      </Provider>
     </div>
   );
 }

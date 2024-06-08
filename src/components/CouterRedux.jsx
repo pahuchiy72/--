@@ -12,7 +12,7 @@ const addSome = (value) => ({ type: ADDSOME, payload: value });
 const subSome = (value) => ({ type: SUBSOME, payload: value });
 const reset = () => ({ type: RESET });
 
-const CounterReducer = (state = { counter: 0 }, action) => {
+const CountReducer = (state = { counter: 0 }, action) => {
   switch (action.type) {
     case ADD:
       return { counter: state.counter + 1 };
@@ -24,6 +24,8 @@ const CounterReducer = (state = { counter: 0 }, action) => {
       return { counter: state.counter - action.payload };
     case RESET:
       return { counter: 0 };
+      default:
+        return state;
   }
 };
 
@@ -52,4 +54,4 @@ function CounterRedux() {
     </div>
   );
 }
-export { CounterReducer, CounterRedux };
+export { CountReducer, CounterRedux };

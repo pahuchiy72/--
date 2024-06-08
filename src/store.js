@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { CounterRedux } from './components/CouterRedux.jsx';
+import { CountReducer } from './components/CouterRedux.jsx';
 
 const store = configureStore({
-  reducer: CounterRedux,
+  reducer: CountReducer,
 });
 
 export default store;
