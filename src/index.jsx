@@ -69,7 +69,7 @@ function App() {
   return (
     <div>
       <ErrorBoundary>
-        <Provider >
+        <Provider store={store}>
           <UserContext.Provider value={user}>
             <WelcomeComponent user={user} />
             <ErrorComponent error={error} />
