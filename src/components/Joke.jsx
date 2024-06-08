@@ -8,7 +8,7 @@ function Joke() {
     'https://api.chucknorris.io/jokes/random'
   );
 
-  if (loading) return <p>Loading...</p>;
+  if (loading) return <p>Завантажується...</p>;
   if (error) return <p>,,,: {error.message}</p>;
 
   return (

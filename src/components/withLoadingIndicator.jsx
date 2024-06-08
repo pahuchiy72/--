@@ -1,10 +1,10 @@
-import { useEffect, useRef } from 'react';
+import React from 'react';
 
-const withLoadingIndicator = () => {
-  return function WithLoadingIndicator(props) {
-    const isLoading = useRef(performance.now());
+const withLoadingIndicator = (WrappedComponent) => {
+  return class WithLoadingIndicator extends React.Component {
+    render() {
+      const { isLoading, ...restProps} = this.props;
 
-    useEffect(() => {
       if (isLoading) {
         return (
           <div>
@@ -12,7 +12,8 @@ const withLoadingIndicator = () => {
           </div>
         );
       }
-    });
+      return <WrappedComponent {...restProps} />
+    }
   };
 };
- export default withLoadingIndicator;
+export default withLoadingIndicator;

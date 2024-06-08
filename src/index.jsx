@@ -9,7 +9,7 @@ import CounterFunc from './components/CounterFunc.jsx';
 import CounterFunc2 from './components/CounterFunc2.jsx';
 import CounterReducers from './components/CounterReducers.jsx';
 import { CounterRedux } from './components/CouterRedux.jsx';
- 
+
 import TemperatureConverter from './components/TemperatureConverter.jsx';
 import MyComponent from './components/MyComponent.jsx';
 import ButtonText from './components/ButtonText.jsx';
@@ -22,20 +22,25 @@ import User from './components/User.jsx';
 import UserInput from './components/UserInput.jsx';
 import UserContext from './context/user.js';
 import TeamList from './components/TeamList.jsx';
- 
+
 import Compo from './components/Compo.jsx';
 import store from './store.js';
 import ThemeContext from './context/theme.js';
 import ModalContainer from './components/ModalContainer.jsx';
 import CardContainer from './components/CardContainer.jsx';
 import Toolbar from './components/Toolbar.jsx';
-
 import ErrorBoundary from './components/ErrorBoundary.jsx';
+// import {
+//   PostsWithLoadingIndicator as Posts,
+//   JokeWithLoadingIndicator as Joke,
+// } from './components/WithLoadingIndicatorComponents.jsx';
+import {
+  PostsWithLoadingIndicator2 as Posts,
+  JokeWithLoadingIndicator2 as Joke,
+} from './components/WithLoadingIndicatorComponets2.jsx';
 import {
   FooterWithRenderTime as Footer,
   ColorWithRenderTime as Color,
-  JokeWithRenderTime as Joke,
-  PostsWithRenderTime as Posts,
 } from './components/WithRenderTimeComponents.jsx';
 
 function Welcome(props) {
