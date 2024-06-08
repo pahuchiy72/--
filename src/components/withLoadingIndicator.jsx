@@ -2,17 +2,20 @@ import React from 'react';
 
 const withLoadingIndicator = (WrappedComponent) => {
   return class WithLoadingIndicator extends React.Component {
+    state = { isLoading: true };
+
+    componentDidMount() {
+      setTimeout(() => {
+        this.setState({ isLoading: false });
+      }, 10000);
+    }
     render() {
-      const { isLoading, ...restProps} = this.props;
+      const { isLoading, ...props } = this.props;
 
       if (isLoading) {
-        return (
-          <div>
-            <p>Завантажується трошки почекайте...</p>
-          </div>
-        );
+        return <p>Завантажується чекайте...</p>;
       }
-      return <WrappedComponent {...restProps} />
+      return <WrappedComponent {...props} isLoading={this.state.isLoading} />;
     }
   };
 };

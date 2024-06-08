@@ -1,9 +1,9 @@
-import Joke from './Joke.jsx';
+import Counter from './Counter.jsx';
 import Posts from './Posts.jsx';
 import withLoadingIndicator2 from './withLoadingIndicator2.jsx';
  
 
 const PostsWithLoadingIndicator2 = withLoadingIndicator2(Posts);
-const JokeWithLoadingIndicator2 = withLoadingIndicator2(Joke)
+const CounterWithLoadingIndicator2 = withLoadingIndicator2(Counter)
 
-export { PostsWithLoadingIndicator2, JokeWithLoadingIndicator2 };
+export { PostsWithLoadingIndicator2, CounterWithLoadingIndicator2 };

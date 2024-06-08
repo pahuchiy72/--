@@ -3,7 +3,7 @@ import ReactDom from 'react-dom/client';
 import { BrowserRouter, Route, Link, Routes } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
-import Counter from './components/Counter.jsx';
+// import Counter from './components/Counter.jsx';
 import Counter1 from './components/Counter1.jsx';
 import CounterFunc from './components/CounterFunc.jsx';
 import CounterFunc2 from './components/CounterFunc2.jsx';
@@ -30,13 +30,10 @@ import ModalContainer from './components/ModalContainer.jsx';
 import CardContainer from './components/CardContainer.jsx';
 import Toolbar from './components/Toolbar.jsx';
 import ErrorBoundary from './components/ErrorBoundary.jsx';
-// import {
-//   PostsWithLoadingIndicator as Posts,
-//   JokeWithLoadingIndicator as Joke,
-// } from './components/WithLoadingIndicatorComponents.jsx';
+import { JokeWithLoadingIndicator as Joke } from './components/WithLoadingIndicatorComponents.jsx';
 import {
   PostsWithLoadingIndicator2 as Posts,
-  JokeWithLoadingIndicator2 as Joke,
+  CounterWithLoadingIndicator2 as Counter,
 } from './components/WithLoadingIndicatorComponets2.jsx';
 import {
   FooterWithRenderTime as Footer,

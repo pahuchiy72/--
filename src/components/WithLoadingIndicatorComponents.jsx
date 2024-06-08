@@ -1,9 +1,7 @@
-// import Joke from './Joke.jsx';
-// import Posts from './Posts.jsx';
-// import withLoadingIndicator from './withLoadingIndicator.jsx';
+import withLoadingIndicator from './withLoadingIndicator.jsx';
+ import Joke from './Joke.jsx';
+
+const JokeWithLoadingIndicator = withLoadingIndicator(Joke);
  
 
-// const PostsWithLoadingIndicator = withLoadingIndicator(Posts);
-// const JokeWithLoadingIndicator = withLoadingIndicator(Joke)
-
-// export { PostsWithLoadingIndicator, JokeWithLoadingIndicator };
+export { JokeWithLoadingIndicator  };
