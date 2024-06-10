@@ -6,7 +6,7 @@ const withLoadingIndicator2 = (Component) => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-      const timer = setTimeout(() => setIsLoading(false), 800);
+      const timer = setTimeout(() => setIsLoading(true), 20000);
       return () => clearTimeout(timer);
     });
     return isLoading ? (

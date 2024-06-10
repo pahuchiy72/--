@@ -1,6 +1,7 @@
 import useFetch from '../hooks/useFetch';
 import UserContext from '../context/user';
 import { useContext } from 'react';
+import { PacmanLoader } from 'react-spinners';
 
 function Joke() {
   const user = useContext(UserContext);
@@ -8,7 +9,13 @@ function Joke() {
     'https://api.chucknorris.io/jokes/random'
   );
 
-  if (loading) return <p>Завантажується...</p>;
+  if (loading)
+    return (
+      <p>
+        Завантажується...
+        <PacmanLoader color="#d63678" />
+      </p>
+    );
   if (error) return <p>,,,: {error.message}</p>;
 
   return (
