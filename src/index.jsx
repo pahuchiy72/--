@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import ReactDom from 'react-dom/client';
 import { BrowserRouter, Route, Link, Routes } from 'react-router-dom';
 import { Provider } from 'react-redux';
-
-// import Counter from './components/Counter.jsx';
+ 
 import Counter1 from './components/Counter1.jsx';
 import CounterFunc from './components/CounterFunc.jsx';
 import CounterFunc2 from './components/CounterFunc2.jsx';
