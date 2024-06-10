@@ -10,7 +10,7 @@ function useFetch(url) {
       try {
         const response = await fetch(url);
         if (!response.ok) {
-          throw new Error('Вида. помилку');
+          throw new Error('помилка мережі');
         }
         const jsonData = await response.json();
         setData(jsonData);
