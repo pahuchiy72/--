@@ -4,8 +4,10 @@ const ButtonStyle = styled.button`
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
   border: 0;
-  border-radius: 15;
 
+  borderradius: '15px';
+  height: '150px';
+  width: '150px';
   display: inline-block;
 
   color: white;
@@ -15,8 +17,6 @@ const ButtonStyle = styled.button`
     background-color: blue;
   }
 
-  &:active {
-    filter: brightness(1);
-  }
+ 
 `;
 export default ButtonStyle;
