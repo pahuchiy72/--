@@ -1,7 +1,8 @@
-import Counter1 from '../components/Counter1';
+import React from 'react';
+import Counter1 from '../components/Counter1.jsx';
 
 export default {
-  title: 'Counter1 Component',
+  title: 'Лічильник 2 на класі Component',
   component: Counter1,
 };
 
