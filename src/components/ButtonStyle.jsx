@@ -8,15 +8,15 @@ const ButtonStyle = styled.button`
   cursor: pointer;
   display: inline-block;
   line-height: 1;
-    color: white;
+  color: white;
   background-color: green;
-  
+
   &:hover {
-  background-color: blue;
+    background-color: blue;
   }
 
   &:active {
-  filter: brightness(1);
+    filter: brightness(1);
   }
-  `;
-  export default ButtonStyle;
+`;
+export default ButtonStyle;
