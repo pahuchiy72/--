@@ -1,13 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const ButtonStyle = styled.button`
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
+
   border: 0;
-  border-radius: 3em;
-  cursor: pointer;
+  border-radius: 15;
+
   display: inline-block;
-  line-height: 1;
+
   color: white;
   background-color: green;
 

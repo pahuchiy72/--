@@ -133,6 +133,9 @@ function App() {
                   <li>
                     <Link to="/buttonToggle">Кнопка складніша</Link>
                   </li>
+                  <li>
+                    <Link to="/buttonClick">Кнопка зі стилю</Link>
+                  </li>
                 </ul>
               </nav>
               <Routes>
@@ -140,6 +143,7 @@ function App() {
                 <Route path="/button" element={<MyComponent />} />
                 <Route path="/buttonText" element={<ButtonText />} />
                 <Route path="/buttonToggle" element={<ButtonToggle />} />
+                <Route path="/buttonClick" element={ <ButtonClick />} />
               </Routes>
             </BrowserRouter>
             <BrowserRouter>
@@ -234,7 +238,7 @@ function App() {
               </button>
             </ThemeContext.Provider>
             {/* <ButtonToggle2 /> */}
-            <ButtonClick />
+           
             <JokeFetch />
           </UserContext.Provider>
         </Provider>
