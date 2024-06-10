@@ -38,6 +38,7 @@ import {
   FooterWithRenderTime as Footer,
   ColorWithRenderTime as Color,
 } from './components/WithRenderTimeComponents.jsx';
+import JokeFetch from './components/JokeFetch.jsx';
 
 function Welcome(props) {
   return <h1>Знову Вітаю {props.name} </h1>;
@@ -230,6 +231,7 @@ function App() {
                 Панель інструментів
               </button>
             </ThemeContext.Provider>
+            <JokeFetch />
           </UserContext.Provider>
         </Provider>
       </ErrorBoundary>
