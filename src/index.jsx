@@ -13,7 +13,7 @@ import TemperatureConverter from './components/TemperatureConverter.jsx';
 import MyComponent from './components/MyComponent.jsx';
 import ButtonText from './components/ButtonText.jsx';
 import ButtonToggle from './components/ButtonToggle.jsx';
-import ButtonToggle2 from './components/ButtonToggle2.jsx';
+// import ButtonToggle2 from './components/ButtonToggle2.jsx';
 import WelcomeComponent from './components/WelcomeComponent.jsx';
 import Greeting from './components/Greeting.jsx';
 import ErrorComponent from './components/ErrorComponent.jsx';
@@ -40,6 +40,7 @@ import {
   ColorWithRenderTime as Color,
 } from './components/WithRenderTimeComponents.jsx';
 import JokeFetch from './components/JokeFetch.jsx';
+import ButtonClick from './components/ButtonStyle2.jsx';
 
 function Welcome(props) {
   return <h1>Знову Вітаю {props.name} </h1>;
@@ -84,7 +85,7 @@ function App() {
             <Welcome name="Євгеній" />
             <Greeting name="Україні!!!" />
             <Greeting name="ЗСУ!!!" />
-<ButtonToggle2 />
+
             <BrowserRouter>
               <nav>
                 <ul>
@@ -232,6 +233,8 @@ function App() {
                 Панель інструментів
               </button>
             </ThemeContext.Provider>
+            {/* <ButtonToggle2 /> */}
+            <ButtonClick />
             <JokeFetch />
           </UserContext.Provider>
         </Provider>
