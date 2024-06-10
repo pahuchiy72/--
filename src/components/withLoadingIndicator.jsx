@@ -7,8 +7,9 @@ const withLoadingIndicator = (WrappedComponent) => {
 
     componentDidMount() {
       setTimeout(() => {
-        this.setState({ isLoading: false });
-      }, 20000);
+        this.setState({ isLoading: false }), 20000;
+      }),
+       
     }
     render() {
       const { isLoading, ...props } = this.props;
