@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import ButtonStyle from './ButtonStyle.jsx';
+import { Button } from './Button/ButtonStyle2.jsx';
 
 function Compo() {
   const [compo, setCompo] = useState('привіт');
@@ -17,7 +17,7 @@ function Compo() {
   return (
     <div>
       <p>{compo}</p>
-      <ButtonStyle onClick={Message}> Привітайся</ButtonStyle>
+      <Button onClick={Message}> Привітайся</Button>
     </div>
   );
 }

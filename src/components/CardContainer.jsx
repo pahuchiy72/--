@@ -1,3 +1,4 @@
+import ButtonStyle from './Button/ButtonStyle.jsx';
 import Card from './Card.jsx';
 
 export default function CardContainer() {
@@ -8,7 +9,7 @@ export default function CardContainer() {
         <p>Картка з текстом</p>
       </Card>
       <Card title="кнопка картки">
-        <button>Натискай</button>
+        <ButtonStyle>Натискай</ButtonStyle>
       </Card>
     </div>
   );

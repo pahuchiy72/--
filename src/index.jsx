@@ -40,7 +40,7 @@ import {
   ColorWithRenderTime as Color,
 } from './components/WithRenderTimeComponents.jsx';
 import JokeFetch from './components/JokeFetch.jsx';
-import ButtonClick from './components/ButtonStyle2.jsx';
+import { Button } from './components/Button/ButtonStyle2.jsx';
 
 function Welcome(props) {
   return <h1>Знову Вітаю {props.name} </h1>;
@@ -134,7 +134,7 @@ function App() {
                     <Link to="/buttonToggle">Кнопка складніша</Link>
                   </li>
                   <li>
-                    <Link to="/buttonClick">Кнопка зі стилю</Link>
+                    <Link to="/buttoncss">Кнопка зі стилю</Link>
                   </li>
                 </ul>
               </nav>
@@ -143,7 +143,7 @@ function App() {
                 <Route path="/button" element={<MyComponent />} />
                 <Route path="/buttonText" element={<ButtonText />} />
                 <Route path="/buttonToggle" element={<ButtonToggle />} />
-                <Route path="/buttonClick" element={ <ButtonClick />} />
+                <Route path="/buttoncss" element={ <Button />} />
               </Routes>
             </BrowserRouter>
             <BrowserRouter>
