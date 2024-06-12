@@ -1,5 +1,5 @@
 import React from 'react';
-import ButtonStyle from './ButtonStyle.jsx';
+import ButtonStyle from './Button/ButtonStyle.jsx';
 
 export default class ButtonToggle2 extends React.Component {
   constructor(props) {
@@ -7,7 +7,7 @@ export default class ButtonToggle2 extends React.Component {
     this.state = { text: 'Тисни' };
   }
   handleOnClick = () => {
-    const text = this.state;
+    const { text } = this.state;
     const isText = text === 'Тисни';
 
     this.setState({
@@ -16,8 +16,7 @@ export default class ButtonToggle2 extends React.Component {
   };
 
   render() {
-    const text = this.state;
-
+    const { text } = this.state;
     return (
       <ButtonStyle type="button" onClick={this.handleOnClick}>
         {text}

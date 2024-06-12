@@ -1,12 +1,12 @@
 import React from 'react';
 
- export default class ErrorBoundary extends React.Component {
+export default class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
     this.state = { hasError: false };
   }
 
- static getDerivedStateFromError(error) {
+  static getDerivedStateFromError(error) {
     return { hasError: true };
   }
 
@@ -16,7 +16,14 @@ import React from 'react';
 
   render() {
     if (this.state.hasError) {
-      return <h1>щось пішло не так</h1>;
+      return (
+        <h1
+          className="mb-2 mt-0 text-5xl font-medium leading-tight text-primary
+           shadow-black bg-lime-200 italic text-red-900"
+        >
+          щось пішло не так 🤬 а а а що робити !?!?
+        </h1>
+      );
     }
     return this.props.children;
   }
