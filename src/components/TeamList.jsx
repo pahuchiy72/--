@@ -10,7 +10,7 @@ function TeamList(props) {
   ));
   return (
     
-    <div className='bg-liam-800 rounded-lg p-4'>
+    <div className='bg-lime-400 rounded-lg p-4'>
       <h1>Група Е</h1>
       {teamItems}
     </div>

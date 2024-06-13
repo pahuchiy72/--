@@ -98,9 +98,17 @@ function App() {
             <WelcomeComponent user={user} />
             <ErrorComponent error={error} />
             <Welcome name="Євгеній" />
-            <Greeting name="Україні!!!" />
-            <Greeting name="ЗСУ!!!" />
-
+            <ul className='flex '>
+              <li className='m-auto'>
+                <Greeting name="Україні!!!" />
+              </li>
+              <li className='m-auto'>
+                <Greeting name="ЗСУ!!!" />
+              </li>
+              <li className='m-auto'>
+                <Greeting name="Героям!!!" />
+              </li>
+            </ul>
             <BrowserRouter>
               <nav className="bg-gray-800 rounded-lg p-4">
                 <ul className="text-white flex flex-wrap justify-center space-x-4">
@@ -277,7 +285,7 @@ function App() {
                   path="/userProfile"
                   element={<UserProfile user={user} />}
                 />
-                <Route path="/user" element={<User user={user} />} />
+                <Route path="/user" element={<User users={users} />} />
               </Routes>
             </BrowserRouter>
             <ThemeContext.Provider value={colorTheme}>
@@ -382,9 +390,11 @@ function App() {
           fill="currentColor"
           viewBox="0 0 18 18"
         >
-          <path d="M3 7H1a1 1 0 0 0-1 1v8a2 2 0 0 0 4 0V8a1 1 0 0 0-1-1Zm12.954 0H12l1.558-4.5a1.778 1.778 
+          <path
+            d="M3 7H1a1 1 0 0 0-1 1v8a2 2 0 0 0 4 0V8a1 1 0 0 0-1-1Zm12.954 0H12l1.558-4.5a1.778 1.778 
           0 0 0-3.331-1.06A24.859 24.859 0 0 1 6 6.8v9.586h.114C8.223 16.969 11.015 18 13.6 18c1.4 0 1.592-.526 
-          1.88-1.317l2.354-7A2 2 0 0 0 15.954 7Z" />
+          1.88-1.317l2.354-7A2 2 0 0 0 15.954 7Z"
+          />
         </svg>
         <span class="sr-only">Icon description</span>
       </button>
@@ -402,9 +412,11 @@ function App() {
           fill="currentColor"
           viewBox="0 0 18 18"
         >
-          <path d="M3 7H1a1 1 0 0 0-1 1v8a2 2 0 0 0 4 0V8a1 1 0 0 0-1-1Zm12.954 0H12l1.558-4.5a1.778 1.778 
+          <path
+            d="M3 7H1a1 1 0 0 0-1 1v8a2 2 0 0 0 4 0V8a1 1 0 0 0-1-1Zm12.954 0H12l1.558-4.5a1.778 1.778 
           0 0 0-3.331-1.06A24.859 24.859 0 0 1 6 6.8v9.586h.114C8.223 16.969 11.015 18 13.6 18c1.4 0 1.592-.526 
-          1.88-1.317l2.354-7A2 2 0 0 0 15.954 7Z" />
+          1.88-1.317l2.354-7A2 2 0 0 0 15.954 7Z"
+          />
         </svg>
         <span class="sr-only">Icon description</span>
       </button>

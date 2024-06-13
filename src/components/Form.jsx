@@ -21,8 +21,8 @@ function Form(props) {
         onChange={handleChange}
       />
       <p>
-        Ми Вітаємо, {name || 'stranger'}! Ось ваша ел.адреса {''} 
-        {email || 'unknown'}.
+        Ми Вітаємо, {name || 'Євген'}! Ось ваша ел.адреса  
+        {email || 'pahuchiy72@ukr.net'}.
       </p>
     </form>
   );
