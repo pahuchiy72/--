@@ -13,46 +13,28 @@ function CounterFunc2() {
   return (
     <div className="counter">
       <button
-        className="counter-button"
-        style={{
-          backgroundColor: 'Coral',
-          color: 'PapayaWhip',
-          // alignItems: 'center', //вирівнює текст внутрі
-          // textAlign: 'center',
-          // textDecoration: 'none',
-          // display: 'inline-block',
-
-          borderRadius: '50%',
-          height: '5em',
-          width: '5em',
-          fontWeight: 'bold', // товщина тексту
-          fontSize: '12px', //розмір тексту
-        }}
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none
+         focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2
+          dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         onClick={increment}
       >
         +
       </button>
       <span
         className="counter-value"
-        style={{ fontSize: '25px', fontWeight: 'bold' }}
+        style={{
+          fontSize: '25px',
+          fontWeight: 'bold',
+          alignItems: 'center', //вирівнює текст внутрі
+          paddingRight: '9px',
+        }}
       >
         {value}
       </span>
-      <button className='w3-button w3-circle w3-black'
-       
-        style={{
-          // backgroundColor: 'Coral',
-          color: 'PapayaWhip',
-          fontSize: '12px',
-          textAlign: 'center',
-          textDecoration: 'none',
-          display: 'inline-block',
-          borderRadius: '50%',
-          height: '5em',
-          width: '5em',
-          fontWeight: 'bold', // товщина тексту
-          
-        }}
+      <button
+        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none
+         focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2
+          dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
         onClick={decrement}
       >
         -
