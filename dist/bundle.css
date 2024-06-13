@@ -437,6 +437,16 @@ video {
   display: none;
 }
 
+:root {
+  --wg-font-smooth--webkit: antialiased;
+  --wg-font-smooth--moz: grayscale;
+}
+
+html {
+  color: hsl(var(--wg-foreground));
+  background-color: hsl(var(--wg-background));
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -547,6 +557,12 @@ video {
 
 .container {
   width: 100%;
+}
+
+@media (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
 }
 
 @media (min-width: 640px) {
@@ -693,7 +709,8 @@ video {
 
 .text-5xl {
   font-size: 3rem;
-  line-height: 1;
+  line-height: 3.5rem;
+  letter-spacing: -0.075rem;
 }
 
 .font-medium {
@@ -706,6 +723,11 @@ video {
 
 .leading-tight {
   line-height: 1.25;
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: hsl(var(--wg-primary) / var(--wg-primary-opacity, var(--tw-text-opacity)));
 }
 
 .text-red-900 {
@@ -735,6 +757,198 @@ video {
 
 .duration-500 {
   transition-duration: 500ms;
+}
+
+:where(:root) {
+  color-scheme: light;
+  --wg-background: 0 0% 100%;
+  --wg-background-opacity: 1.00;
+  --wg-foreground: 240 12% 8%;
+  --wg-foreground-opacity: 1.00;
+  --wg-primary-50: 255 75% 97%;
+  --wg-primary-50-opacity: 1.00;
+  --wg-primary-100: 255 80% 92%;
+  --wg-primary-100-opacity: 1.00;
+  --wg-primary-200: 255 80% 84%;
+  --wg-primary-200-opacity: 1.00;
+  --wg-primary-300: 255 80% 76%;
+  --wg-primary-300-opacity: 1.00;
+  --wg-primary-400: 255 80% 68%;
+  --wg-primary-400-opacity: 1.00;
+  --wg-primary-500: 255 80% 60%;
+  --wg-primary-500-opacity: 1.00;
+  --wg-primary-600: 255 80% 52%;
+  --wg-primary-600-opacity: 1.00;
+  --wg-primary-700: 255 80% 44%;
+  --wg-primary-700-opacity: 1.00;
+  --wg-primary-800: 255 80% 36%;
+  --wg-primary-800-opacity: 1.00;
+  --wg-primary-900: 255 80% 28%;
+  --wg-primary-900-opacity: 1.00;
+  --wg-primary: 255 80% 60%;
+  --wg-primary-opacity: 1.00;
+  --wg-secondary-50: 240 7% 97%;
+  --wg-secondary-50-opacity: 1.00;
+  --wg-secondary-100: 240 11% 93%;
+  --wg-secondary-100-opacity: 1.00;
+  --wg-secondary-200: 240 12% 84%;
+  --wg-secondary-200-opacity: 1.00;
+  --wg-secondary-300: 240 12% 70%;
+  --wg-secondary-300-opacity: 1.00;
+  --wg-secondary-400: 240 12% 59%;
+  --wg-secondary-400-opacity: 1.00;
+  --wg-secondary-500: 240 12% 48%;
+  --wg-secondary-500-opacity: 1.00;
+  --wg-secondary-600: 240 12% 38%;
+  --wg-secondary-600-opacity: 1.00;
+  --wg-secondary-700: 240 12% 28%;
+  --wg-secondary-700-opacity: 1.00;
+  --wg-secondary-800: 240 12% 18%;
+  --wg-secondary-800-opacity: 1.00;
+  --wg-secondary-900: 240 12% 8%;
+  --wg-secondary-900-opacity: 1.00;
+  --wg-secondary: 240 12% 8%;
+  --wg-secondary-opacity: 1.00;
+  --wg-surface-50: 240 7% 97%;
+  --wg-surface-50-opacity: 1.00;
+  --wg-surface-100: 240 11% 93%;
+  --wg-surface-100-opacity: 1.00;
+  --wg-surface-200: 240 12% 84%;
+  --wg-surface-200-opacity: 1.00;
+  --wg-surface-300: 240 12% 70%;
+  --wg-surface-300-opacity: 1.00;
+  --wg-surface-400: 240 12% 59%;
+  --wg-surface-400-opacity: 1.00;
+  --wg-surface-500: 240 12% 48%;
+  --wg-surface-500-opacity: 1.00;
+  --wg-surface-600: 240 12% 38%;
+  --wg-surface-600-opacity: 1.00;
+  --wg-surface-700: 240 12% 28%;
+  --wg-surface-700-opacity: 1.00;
+  --wg-surface-800: 240 12% 18%;
+  --wg-surface-800-opacity: 1.00;
+  --wg-surface-900: 240 12% 8%;
+  --wg-surface-900-opacity: 1.00;
+  --wg-surface: 240 7% 97%;
+  --wg-surface-opacity: 1.00;
+  --wg-destructive-50: 343 88% 97%;
+  --wg-destructive-50-opacity: 1.00;
+  --wg-destructive-100: 345 90% 92%;
+  --wg-destructive-100-opacity: 1.00;
+  --wg-destructive-200: 345 90% 84%;
+  --wg-destructive-200-opacity: 1.00;
+  --wg-destructive-300: 345 90% 76%;
+  --wg-destructive-300-opacity: 1.00;
+  --wg-destructive-400: 345 90% 68%;
+  --wg-destructive-400-opacity: 1.00;
+  --wg-destructive-500: 345 90% 60%;
+  --wg-destructive-500-opacity: 1.00;
+  --wg-destructive-600: 345 90% 52%;
+  --wg-destructive-600-opacity: 1.00;
+  --wg-destructive-700: 345 90% 44%;
+  --wg-destructive-700-opacity: 1.00;
+  --wg-destructive-800: 345 90% 36%;
+  --wg-destructive-800-opacity: 1.00;
+  --wg-destructive-900: 345 90% 28%;
+  --wg-destructive-900-opacity: 1.00;
+  --wg-destructive: 345 90% 60%;
+  --wg-destructive-opacity: 1.00;
+}
+
+.dark,[data-theme="dark"] {
+  color-scheme: dark;
+  --wg-background: 240 12% 8%;
+  --wg-background-opacity: 1.00;
+  --wg-foreground: 0 0% 100%;
+  --wg-foreground-opacity: 1.00;
+  --wg-primary-50: 255 75% 97%;
+  --wg-primary-50-opacity: 1.00;
+  --wg-primary-100: 255 80% 92%;
+  --wg-primary-100-opacity: 1.00;
+  --wg-primary-200: 255 80% 84%;
+  --wg-primary-200-opacity: 1.00;
+  --wg-primary-300: 255 80% 76%;
+  --wg-primary-300-opacity: 1.00;
+  --wg-primary-400: 255 80% 68%;
+  --wg-primary-400-opacity: 1.00;
+  --wg-primary-500: 255 80% 60%;
+  --wg-primary-500-opacity: 1.00;
+  --wg-primary-600: 255 80% 60%;
+  --wg-primary-600-opacity: 1.00;
+  --wg-primary-700: 255 80% 44%;
+  --wg-primary-700-opacity: 1.00;
+  --wg-primary-800: 255 80% 36%;
+  --wg-primary-800-opacity: 1.00;
+  --wg-primary-900: 255 80% 28%;
+  --wg-primary-900-opacity: 1.00;
+  --wg-primary: 255 80% 68%;
+  --wg-primary-opacity: 1.00;
+  --wg-secondary-50: 0 0% 100%;
+  --wg-secondary-50-opacity: 0.05;
+  --wg-secondary-100: 0 0% 100%;
+  --wg-secondary-100-opacity: 0.10;
+  --wg-secondary-200: 0 0% 100%;
+  --wg-secondary-200-opacity: 0.20;
+  --wg-secondary-300: 0 0% 100%;
+  --wg-secondary-300-opacity: 0.30;
+  --wg-secondary-400: 0 0% 100%;
+  --wg-secondary-400-opacity: 0.40;
+  --wg-secondary-500: 0 0% 100%;
+  --wg-secondary-500-opacity: 0.50;
+  --wg-secondary-600: 0 0% 100%;
+  --wg-secondary-600-opacity: 0.60;
+  --wg-secondary-700: 0 0% 100%;
+  --wg-secondary-700-opacity: 0.80;
+  --wg-secondary-800: 0 0% 100%;
+  --wg-secondary-800-opacity: 0.90;
+  --wg-secondary-900: 240 12% 8%;
+  --wg-secondary-900-opacity: 1.00;
+  --wg-secondary: 0 0% 100%;
+  --wg-secondary-opacity: 1.00;
+  --wg-surface-50: 0 0% 100%;
+  --wg-surface-50-opacity: 0.10;
+  --wg-surface-100: 0 0% 100%;
+  --wg-surface-100-opacity: 0.20;
+  --wg-surface-200: 0 0% 100%;
+  --wg-surface-200-opacity: 0.30;
+  --wg-surface-300: 0 0% 100%;
+  --wg-surface-300-opacity: 0.40;
+  --wg-surface-400: 0 0% 100%;
+  --wg-surface-400-opacity: 0.50;
+  --wg-surface-500: 0 0% 100%;
+  --wg-surface-500-opacity: 0.50;
+  --wg-surface-600: 0 0% 100%;
+  --wg-surface-600-opacity: 0.70;
+  --wg-surface-700: 0 0% 100%;
+  --wg-surface-700-opacity: 0.80;
+  --wg-surface-800: 0 0% 100%;
+  --wg-surface-800-opacity: 0.90;
+  --wg-surface-900: 0 0% 100%;
+  --wg-surface-900-opacity: 1.00;
+  --wg-surface: 0 0% 100%;
+  --wg-surface-opacity: 0.10;
+  --wg-destructive-50: 343 88% 97%;
+  --wg-destructive-50-opacity: 1.00;
+  --wg-destructive-100: 345 90% 92%;
+  --wg-destructive-100-opacity: 1.00;
+  --wg-destructive-200: 345 90% 84%;
+  --wg-destructive-200-opacity: 1.00;
+  --wg-destructive-300: 345 90% 76%;
+  --wg-destructive-300-opacity: 1.00;
+  --wg-destructive-400: 345 90% 68%;
+  --wg-destructive-400-opacity: 1.00;
+  --wg-destructive-500: 345 90% 60%;
+  --wg-destructive-500-opacity: 1.00;
+  --wg-destructive-600: 345 90% 52%;
+  --wg-destructive-600-opacity: 1.00;
+  --wg-destructive-700: 345 90% 44%;
+  --wg-destructive-700-opacity: 1.00;
+  --wg-destructive-800: 345 90% 36%;
+  --wg-destructive-800-opacity: 1.00;
+  --wg-destructive-900: 345 90% 28%;
+  --wg-destructive-900-opacity: 1.00;
+  --wg-destructive: 345 90% 60%;
+  --wg-destructive-opacity: 1.00;
 }
 
 .hover\:bg-cyan-500:hover {

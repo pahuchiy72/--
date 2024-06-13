@@ -17,10 +17,10 @@ function CounterFunc2() {
         style={{
           backgroundColor: 'Coral',
           color: 'PapayaWhip',
-          alignItems: 'center', //вирівнює текст внутрі
-          textAlign: 'center',
-          textDecoration: 'none',
-          display: 'inline-block',
+          // alignItems: 'center', //вирівнює текст внутрі
+          // textAlign: 'center',
+          // textDecoration: 'none',
+          // display: 'inline-block',
 
           borderRadius: '50%',
           height: '5em',
