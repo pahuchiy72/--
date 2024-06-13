@@ -38,10 +38,10 @@ function CounterFunc2() {
       >
         {value}
       </span>
-      <button
-        className="text-10xl"
+      <button className='w3-button w3-circle w3-black'
+       
         style={{
-          backgroundColor: 'Coral',
+          // backgroundColor: 'Coral',
           color: 'PapayaWhip',
           fontSize: '12px',
           textAlign: 'center',
