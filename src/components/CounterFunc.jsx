@@ -13,39 +13,56 @@ function CounterFunc() {
 
   return (
     <div>
-      <p>Плюснув {count} раз</p>
       <button
         style={{
           backgroundColor: 'DarkCyan',
           border: 'none',
-          color: 'DarkGrey',
-          padding: '15px 32px',
+          color: 'GreenYellow',
+          height: '40px', //висота
+          width: '140px', //довжина
           textAlign: 'center',
           textDecoration: 'none',
           display: 'inline-block',
           fontSize: '16px',
-          borderRadius: '20px',
+          borderRadius: '8px',
+          marginLeft: '10px',
         }}
         onClick={increment}
       >
         Клікай в +
+        <span
+          class="inline-flex items-center justify-center w-6 h-6 ms-2 text-xs font-semibold
+           text-blue-800 bg-blue-200 rounded-full"
+        >
+          {count}
+        </span>
+        раз
       </button>
-      <p>Мінуснув {decremehtCount} раз</p>
+
       <button
         style={{
           backgroundColor: 'DarkCyan',
           border: 'none',
-          color: 'DarkGrey',
-          padding: '15px 32px',
+          color: 'GreenYellow',
+          height: '40px', //висота
+          width: '140px', //довжина
           textAlign: 'center',
           textDecoration: 'none',
           display: 'inline-block',
           fontSize: '16px',
-          borderRadius: '20px',
+          borderRadius: '8px',
+          marginLeft: '10px',
         }}
         onClick={decrement}
       >
         Клікай в -
+        <span
+          class="inline-flex items-center justify-center w-6 h-6 ms-2 text-xs font-semibold
+           text-blue-800 bg-blue-200 rounded-full"
+        >
+          {decremehtCount}
+        </span>
+        раз
       </button>
     </div>
   );

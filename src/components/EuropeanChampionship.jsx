@@ -1,6 +1,6 @@
 
 function EuropeanChampionship(props) {
-  
+
   return (
     <div>
       <h3

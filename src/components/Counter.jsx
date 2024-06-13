@@ -59,6 +59,7 @@ export default class Counter extends React.Component {
           onClick={this.incremehtCount}
         >
           Кнопка додавання
+      
         </button>
         <button
           style={{

@@ -55,6 +55,7 @@ export default class Counter1 extends React.Component {
               display: 'inline-block',
               fontSize: '16px',
               borderRadius: '20px',
+             
             }}
             onClick={this.decremehtCount}
           >
