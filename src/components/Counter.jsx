@@ -24,18 +24,19 @@ export default class Counter extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="flex space-x-4">
         <h1
           style={{
             justifyContent: 'center',
             color: 'DarkOrchid',
             backgroundColor: 'Chartreuse',
-            alighItems: 'center',
-            textAlign: 'center',
+            fontWeight: 'bold', // товщина тексту
+            fontSize: '25px', //розмір тексту
+            alignItems: 'center', //вирівнює текст внутрі
             textDecoration: 'none',
             display: 'flex',
             height: '50px', //висота
-            width: '150px', //довжина
+            width: '50px', //довжина
             borderRadius: '15px',
             overflow: 'hidden',
           }}
@@ -47,11 +48,13 @@ export default class Counter extends React.Component {
             backgroundColor: 'Green' /* зелений */,
             border: 'none',
             color: 'Ivory',
-            padding: '15px 32px',
-            textAlign: 'center',
+            alignItems: 'center', //вирівнює текст внутрі
             textDecoration: 'none',
             display: 'inline-block',
             fontSize: '16px',
+            height: '50px', //висота
+            width: '205px', //довжина
+            borderRadius: '10px',
           }}
           onClick={this.incremehtCount}
         >
@@ -62,11 +65,13 @@ export default class Counter extends React.Component {
             backgroundColor: 'red' /* червоний */,
             border: 'none',
             color: 'Ivory',
-            padding: '15px 32px',
             textAlign: 'center',
             textDecoration: 'none',
             display: 'inline-block',
             fontSize: '16px',
+            height: '50px', //висота
+            width: '205px', //довжина
+            borderRadius: '10px',
           }}
           onClick={this.decremehtCount}
         >

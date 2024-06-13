@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 function CounterFunc2() {
   const [value, setValue] = useState(0);
- 
 
   const increment = () => {
     setValue(value + 1);
@@ -12,40 +11,51 @@ function CounterFunc2() {
   };
 
   return (
-    <div className='counter'>
-     
-      <button className='counter-button'
+    <div className="counter">
+      <button
+        className="counter-button"
         style={{
           backgroundColor: 'Coral',
-          border: 'none',
           color: 'PapayaWhip',
-          padding: '15px 32px',
+          alignItems: 'center', //вирівнює текст внутрі
           textAlign: 'center',
           textDecoration: 'none',
           display: 'inline-block',
-          fontSize: '16px',
-          borderRadius: '20px',
+
+          borderRadius: '50%',
+          height: '5em',
+          width: '5em',
+          fontWeight: 'bold', // товщина тексту
+          fontSize: '12px', //розмір тексту
         }}
         onClick={increment}
       >
-         +
+        +
       </button>
-      <span className='counter-value'>{value}</span>
-      <button className='counter-button'
+      <span
+        className="counter-value"
+        style={{ fontSize: '25px', fontWeight: 'bold' }}
+      >
+        {value}
+      </span>
+      <button
+        className="text-10xl"
         style={{
           backgroundColor: 'Coral',
-          border: 'none',
           color: 'PapayaWhip',
-          padding: '15px 32px',
+          fontSize: '12px',
           textAlign: 'center',
           textDecoration: 'none',
           display: 'inline-block',
-          fontSize: '16px',
-          borderRadius: '20px',
+          borderRadius: '50%',
+          height: '5em',
+          width: '5em',
+          fontWeight: 'bold', // товщина тексту
+          
         }}
         onClick={decrement}
       >
-         -
+        -
       </button>
     </div>
   );

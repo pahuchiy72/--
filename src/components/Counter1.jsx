@@ -25,7 +25,7 @@ export default class Counter1 extends React.Component {
   
     render() {
       return (
-        <div>
+        <div className="flex space-x-4">
           <Display count={this.state.count} />
           <button
             style={{
