@@ -164,7 +164,7 @@ function App() {
               </Routes>
             </BrowserRouter>
             <BrowserRouter>
-              <nav className="bg-indigo-800 rounded-lg p-4">
+              <nav className="bg-yellow-500 rounded-lg p-4">
                 <ul className="text-white flex flex-wrap justify-center space-x-4">
                   <li>
                     <Link className="hover:overline" to="/color">
