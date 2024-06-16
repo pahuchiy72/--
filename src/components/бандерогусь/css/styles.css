@@ -115,47 +115,100 @@ body {
 .facts-1 {
   width: calc((100% / 3) - (24px * 2) / 3);
 }
-.form-page-text-container {
-  border-radius: 40px;
-  width: 574px;
-  height: 547px;
-  background: white;
-  padding-left: 60px;
-  padding-top: 45px;
-  padding-right: 60px;
-  padding-bottom: 46px;
-  margin-bottom: 80px;
-  margin-top: 132px;
-  margin-left: 393px;
-  margin-right: 393px;
-  text-align: center;
-  box-sizing: border-box;
+.trezub2 {
+  margin-bottom: 32px;
 }
 .form-title {
   margin-top: 0px;
-  margin-bottom: 0;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 150%;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
   color: black;
 }
-.form-name{
- font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-color: #000;
-text-align: left;
 
-}
-.form-page-btn {
+.form-btn {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
   border-radius: 10px;
   padding: 12px 24px;
-  width: 172px;
-  height: 48px;
   margin-top: 40px;
   box-sizing: border-box;
   background: orange;
   color: white;
   border: none;
   cursor: pointer;
+}
+.form-cotainer {
+  width: 100%;
+  background: linear-gradient(90deg, #fcfefe 0%, #a5deff 100%);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  background: white;
+  border-radius: 40px;
+  padding-top: 32px;
+  padding-left: 60px;
+  padding-bottom: 60px;
+  padding-right: 60px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.form-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+  margin-top: 0px;
+  margin-bottom: 24px;
+}
+.form-field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 8px;
+  fill: white;
+  stroke-width: 1px;
+  stroke: blue;
+}
+.form-field-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000;
+  margin-bottom: 8px;
+}
+.form-field-name {
+  margin-bottom: 24px;
+}
+.form-input {
+border-radius: 8px;
+border: 1px solid blue;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 150%;
+ color: black;
+ padding: 12px 24px;
+ box-sizing: border-box;
+ width: 100%;
+}
+.form-field-email {
+  margin-bottom: 48px;
+}
+.gus-anim {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin-bottom: auto;
+  margin-top: auto;
+  width: 100%;
+  z-index: 2;
+  pointer-events: none;
 }

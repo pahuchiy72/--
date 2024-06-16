@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preload" href="./img/gus-anim.gif" as="image">
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -26,7 +27,7 @@
             Слава Україні!
           </p>
 
-          <button class="main-page-btn">Запустити гуся</button>
+          <button class="main-page-btn" id="go-to-form-btn">Запустити гуся</button>
         </div>
 
         <img src="img/gus.svg" alt="Бандерогусь" />
@@ -69,45 +70,26 @@
         </div>
       </div>
     </section>
-    <section class="main-page">
-      <div class="wrapper">
-        <div class="form-page-text-container">
-          <img src="img/trezub.svg" alt="bang" class="trezub1" />
-          <h2 class="form-title">Поділися, будь ласка, поштою</h2>
-          <p class="form-title">та запиши гуся до бандерозагону</p>
-          <p class="form-name">Ім'я</p>
-          <svg
-            width="453"
-            height="60"
-            viewBox="0 0 453 60"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path style="margin-top: 12px;"
-              d="M0.5 8C0.5 3.85786 3.85786 0.5 8 0.5H445C449.142 0.5 452.5 3.85786 452.5 8V52C452.5 56.1421 449.142 59.5 445 59.5H7.99999C3.85786 
-        59.5 0.5 56.1421 0.5 52V8Z"
-              fill="#F5F5F5"
-              stroke="#005BBB"
-            />
-          </svg>
-          <p class="form-name">Email</p>
-          <svg
-            width="453"
-            height="60"
-            viewBox="0 0 453 60"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path style="margin-top: 12px;"
-              d="M0.5 8C0.5 3.85786 3.85786 0.5 8 0.5H445C449.142 0.5 452.5 3.85786 452.5 8V52C452.5 56.1421 449.142 59.5 445 
-              59.5H7.99999C3.85786 59.5 0.5 56.1421 0.5 52V8Z"
-              fill="#F5F5F5"
-              stroke="#005BBB"
-            />
-          </svg>
-          <button class="form-page-btn" onclick="alert('хочу літати')">Запустити гуся</button>
-        </div>
-      </div>
+
+    <section class="form-cotainer">
+      <form action="#" class="form" id="form">
+          <img src="img/trezub.svg" alt="bang" class="trezub2" />
+          <h4 class="form-title">Поділися, будь ласка, поштою</h4>
+          <p class="form-descr">та запиши гуся до бандерозагону</p>
+
+          <div class="form-field form-field-name">
+            <label for="user-name" class="form-field-label">Ім'я</label>
+            <input type="text" id="user-name" class="form-input">
+          </div>
+
+          <div class="form-field form-field-email">
+            <label for="user-email" class="form-field-label">Email</label>
+            <input type="email" id="user-email" class="form-input">
+          </div>
+          <button type="submit" class="form-btn" id='launch-btn'>Запустити гуся</button>
+        </form>
     </section>
+
+    <script src="js/form.js"></script>
   </body>
 </html>

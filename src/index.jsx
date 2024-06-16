@@ -56,10 +56,10 @@ const error = {
 };
 
 const teams = [
-  { id: 1, name: 'Бельгія', odds: 48.5 },
-  { id: 2, name: 'Словаччина', odds: 14.4 },
-  { id: 3, name: 'Румунія', odds: 18.3 },
-  { id: 4, name: 'Україна', odds: 26.0 },
+  { id: 1, name: 'Бельгія', odds: '48.5%' },
+  { id: 2, name: 'Словаччина', odds: '14.4%' },
+  { id: 3, name: 'Румунія', odds: '18.3%' },
+  { id: 4, name: 'Україна', odds: '26.0%' },
 ];
 
 function App() {
@@ -98,14 +98,14 @@ function App() {
             <WelcomeComponent user={user} />
             <ErrorComponent error={error} />
             <Welcome name="Євгеній" />
-            <ul className='flex '>
-              <li className='m-auto'>
+            <ul className="flex ">
+              <li className="m-auto">
                 <Greeting name="Україні!!!" />
               </li>
-              <li className='m-auto'>
+              <li className="m-auto">
                 <Greeting name="ЗСУ!!!" />
               </li>
-              <li className='m-auto'>
+              <li className="m-auto">
                 <Greeting name="Героям!!!" />
               </li>
             </ul>
@@ -292,11 +292,11 @@ function App() {
               <BrowserRouter>
                 <nav className="bg-yellow-800 rounded-lg p-4">
                   <ul className="text-white flex flex-wrap justify-center space-x-4 ">
-                    <li>
+                    {/* <li>
                       <Link className="underline hover:decoration-4" to="/list">
                         Чемпіонат Європи
                       </Link>
-                    </li>
+                    </li> */}
                     <li>
                       <Link className="hover:text-2xl" to="/temperature">
                         Конвектор температури
@@ -310,7 +310,7 @@ function App() {
                   </ul>
                 </nav>
                 <Routes>
-                  <Route path="list" element={<TeamList teams={teams} />} />
+                  {/* <Route path="list" element={} /> */}
                   <Route
                     path="/temperature"
                     element={<TemperatureConverter />}
@@ -318,6 +318,7 @@ function App() {
                   <Route path="/tolbar" element={<Toolbar />} />
                 </Routes>
               </BrowserRouter>
+              <TeamList teams={teams} />
               <button
                 type="button"
                 className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"

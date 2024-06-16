@@ -2,16 +2,13 @@ import React from 'react';
 import EuropeanChampionship from './EuropeanChampionship.jsx';
 
 function TeamList(props) {
-  
-    
   const teams = props.teams;
   const teamItems = teams.map((team) => (
     <EuropeanChampionship key={team.id} team={team} />
   ));
   return (
-    
-    <div className='bg-lime-400 rounded-lg p-4'>
-      <h1>Група Е</h1>
+    <div className="bg-lime-400 rounded-lg  mx-10">
+      <h1 style={{ textAlign: 'center' }}>Група Е коефіцієнти на перемогу</h1>
       {teamItems}
     </div>
   );
