@@ -13,7 +13,16 @@ export default class TemperatureConverter extends React.Component {
   };
   render() {
     const temperatureCelsius = (
-      <button type="button" onClick={this.converterFahrenheit}>
+      <button
+        type="button"
+        style={{
+          backgroundColor: 'DarkGrey',
+          color: '#333',
+          border: '2px solid #ccc',
+          padding: '10px',
+        }}
+        onClick={this.converterFahrenheit}
+      >
         Перехід на Фаренгейт
       </button>
     );
@@ -21,10 +30,39 @@ export default class TemperatureConverter extends React.Component {
 
     return (
       <div>
-        <h1>Температура: {this.state.temperature}</h1>
-        <input id="input1" placeholder="ввести температуру по Цельсію °С" />
+        <h1
+          style={{
+            color: 'darkmagenta',
+            backgroundColor: 'blanchedalmond',
+            fontSize: '200%',
+            textAlign: 'center',
+            fontFamily: 'Arial, Verdana, sans-serif',
+            width: '595px',
+          }}
+        >
+          Температура: {this.state.temperature}
+        </h1>
+        <input
+          id="input1"
+          style={{
+            backgroundColor: '#eee',
+            color: '#333',
+            border: '2px solid #ccc',
+            padding: '10px',
+          }}
+          placeholder="ввести температуру по Цельсію °С"
+        />
         {temperatureCelsius}
-        <input value={temperatureFahrenheit} readOnly="" />
+        <input
+          style={{
+            backgroundColor: '#eee',
+            color: '#333',
+            border: '2px solid #ccc',
+            padding: '10px',
+          }}
+          value={temperatureFahrenheit}
+          readOnly=""
+        />
       </div>
     );
   }

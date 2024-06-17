@@ -292,11 +292,11 @@ function App() {
               <BrowserRouter>
                 <nav className="bg-yellow-800 rounded-lg p-4">
                   <ul className="text-white flex flex-wrap justify-center space-x-4 ">
-                    {/* <li>
+                    <li>
                       <Link className="underline hover:decoration-4" to="/list">
                         Чемпіонат Європи
                       </Link>
-                    </li> */}
+                    </li>
                     <li>
                       <Link className="hover:text-2xl" to="/temperature">
                         Конвектор температури
@@ -310,7 +310,7 @@ function App() {
                   </ul>
                 </nav>
                 <Routes>
-                  {/* <Route path="list" element={} /> */}
+                  <Route path="list" element={ <TeamList teams={teams} />} />
                   <Route
                     path="/temperature"
                     element={<TemperatureConverter />}
@@ -318,7 +318,7 @@ function App() {
                   <Route path="/tolbar" element={<Toolbar />} />
                 </Routes>
               </BrowserRouter>
-              <TeamList teams={teams} />
+             
               <button
                 type="button"
                 className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
