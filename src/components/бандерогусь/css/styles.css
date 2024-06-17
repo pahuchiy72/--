@@ -64,7 +64,6 @@ body {
 .logo {
   position: absolute;
   top: 32px;
-
   left: 0px;
 }
 .facts-title {
@@ -188,15 +187,15 @@ body {
   margin-bottom: 24px;
 }
 .form-input {
-border-radius: 8px;
-border: 1px solid blue;
- font-weight: 400;
- font-size: 16px;
- line-height: 150%;
- color: black;
- padding: 12px 24px;
- box-sizing: border-box;
- width: 100%;
+  border-radius: 8px;
+  border: 1px solid blue;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: black;
+  padding: 12px 24px;
+  box-sizing: border-box;
+  width: 100%;
 }
 .form-field-email {
   margin-bottom: 48px;

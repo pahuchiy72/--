@@ -7,8 +7,10 @@ function TeamList(props) {
     <EuropeanChampionship key={team.id} team={team} />
   ));
   return (
-    <div className="bg-lime-400 rounded-lg  mx-10">
-      <h1 style={{ textAlign: 'center' }}>Група Е коефіцієнти на перемогу</h1>
+    <div style={{ textAlign: 'center' }}>
+      <h1 className="bg-lime-400  inline-block w-96 font-bold shadow-xl rounded-lg h-9 p-1">
+        Група Е коефіцієнти на перемогу
+      </h1>
       {teamItems}
     </div>
   );

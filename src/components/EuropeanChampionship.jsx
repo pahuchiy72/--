@@ -1,27 +1,34 @@
 function EuropeanChampionship(props) {
   return (
-    <div style={{ fontFamily: 'Montserrat sans-serif', textAlign:'center' }}>
+    <div
+      style={{
+        fontFamily: 'Montserrat sans-serif',
+        fontWeight: 'bold',
+        marginTop: '5px',
+        }}
+    >
       <h3
         style={{
-          margin: 'auto',
-        //  height: '500px',
-          display: 'inline',
-          // width:'150px',
-          // marginRight: '35px',
-          paddingRight:'20px',
+          backgroundColor: 'lightBlue',
+          borderRadius: '8px',
+          display: 'inline-block',
+          width: '146px',
+          height: '30px',
           boxSizing: 'border-box',
+          padding: '3px',
         }}
       >
         {props.team.name}
       </h3>
       <p
         style={{
-          // margin: '10px',
-          // padding: '4px',
-          display: 'inline',
+          backgroundColor: 'yellow',
+          width: '146px',
+          borderRadius: '8px',
+          display: 'inline-block',
           marginRight: '5px',
-          // border: '1px solid #000',
-          // padding: '3px',
+          height: '30px',
+          padding: '3px',
         }}
       >
         {props.team.odds}

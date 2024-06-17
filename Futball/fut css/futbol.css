@@ -1,5 +1,8 @@
 .container_genet {
-  padding: 300px 20px 130px 20px;
+ padding-bottom: 130px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 300px;
   position: relative;
   background-color: rgb(89, 160, 17);
   z-index: 0;
@@ -1369,11 +1372,6 @@
   border-radius: 50%;
   z-index: 1;
   position: absolute;
-  background-image: radial-gradient(
-    circle at 10px 10px,
-    rgba(25, 255, 255, 0.8),
-    rgba(25, 255, 255, 0.4)
-  );
   border-radius: 50%;
   top: 35px;
   animation: 1.5s infinite alternate;
