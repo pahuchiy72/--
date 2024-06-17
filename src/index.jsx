@@ -3,6 +3,7 @@ import ReactDom from 'react-dom/client';
 import { BrowserRouter, Route, Link, Routes } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Switch from 'react-switch';
+ 
 
 import Counter1 from './components/Counter1.jsx';
 import CounterFunc from './components/CounterFunc.jsx';
@@ -56,10 +57,10 @@ const error = {
 };
 
 const teams = [
-  { id: 1, name: 'Бельгія', odds: '48.5%' },
-  { id: 2, name: 'Словаччина', odds: '14.4%' },
-  { id: 3, name: 'Румунія', odds: '18.3%' },
-  { id: 4, name: 'Україна', odds: '26.0%' },
+  { id: 1, name: 'Бельгія 🇧🇪', odds: '48.5%' },
+  { id: 2, name: 'Словаччина 🇸🇰', odds: '14.4%' },
+  { id: 3, name: 'Румунія 🇷🇴', odds: '18.3%' },
+  { id: 4, name: 'Україна 💙💛🇺🇦 ', odds: '26.0%' },
 ];
 
 function App() {
