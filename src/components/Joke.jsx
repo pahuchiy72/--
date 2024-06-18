@@ -20,8 +20,23 @@ function Joke() {
 
   return (
     <div>
-      <p>Привітання, {user.names}</p>
-      <p>Жарт про Чака Норріса: {data.value}</p>
+      <p
+        style={{
+          fontFamily: 'Arial, Verdana, Helvetica, sans-serif',
+          fontSize: '90%',
+          background: 'PaleGoldenRod',
+          color: 'black',
+          display: 'inline-block',
+        }}
+      >
+        Привітання, {user.names}
+      </p>
+      <p  style={{
+          fontFamily: 'Arial, Verdana, Helvetica, sans-serif',
+          fontSize: '90%',
+          background: 'Thistle',
+          color: 'black',
+        }}>Жарт про Чака Норріса: {data.value}</p>
     </div>
   );
 }
