@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Modal from './Modal.jsx';
+ 
 
 export default function ModalContainer() {
   const [showConfirn, setShowConfirn] = useState(false);
@@ -21,7 +22,7 @@ export default function ModalContainer() {
 
   return (
     <div className="app">
-      <button onClick={() => setShowConfirn(true)}>Підтвердіть свою дію</button>
+      <button  onClick={() => setShowConfirn(true)}>Підтвердіть свою дію</button>
       <button onClick={() => setShowError(true)}>У вас сталася помилка</button>
       <button onClick={() => setShowInfo(true)}>Оримайте інформацію</button>
       {showConfirn && (
