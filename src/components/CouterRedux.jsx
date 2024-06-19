@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { Button2 } from './Button/ButtonStyle3.jsx';
+import { Button } from './Button/ButtonStyle2.jsx';
 
 const ADD = 'ADD';
 const SUB = 'SUB';
@@ -37,12 +37,12 @@ function CounterRedux() {
   return (
     <div>
       <p>Рахувати : {counter}</p>
-      <Button2 type="button" primary onClick={() => dispatch(addOne())}>
+      <Button type="button" primary onClick={() => dispatch(addOne())}>
         Додати 1
-      </Button2>
-      <Button2 type="button" onClick={() => dispatch(subOne())}>
+      </Button>
+      <Button type="button" onClick={() => dispatch(subOne())}>
         Відняти 1
-      </Button2>
+      </Button>
       <button type="button" onClick={() => dispatch(addSome(10))}>
         Додати 10
       </button>

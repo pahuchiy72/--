@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 const ButtonStyle = styled.button`
   font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
@@ -17,7 +16,5 @@ const ButtonStyle = styled.button`
   &:hover {
     background-color: blue;
   }
-
- 
 `;
 export default ButtonStyle;

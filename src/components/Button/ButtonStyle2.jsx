@@ -9,7 +9,7 @@ const ButtonStyle2 = styled.button`
   padding: 10px;
   font-size: 16px
  
-}
+ 
 `;
 
 function Button(props) {

@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import Modal from './Modal.jsx';
- 
+import ButtonStyleGreen from './Button/ButtonStyleGreen.jsx';
+import ButtonStyleRed from './Button/ButtonStyleRed.jsx';
+import ButtonStyleBlue from './Button/ButtonStyleBlue.jsx';
 
 export default function ModalContainer() {
   const [showConfirn, setShowConfirn] = useState(false);
@@ -22,9 +24,15 @@ export default function ModalContainer() {
 
   return (
     <div className="app">
-      <button  onClick={() => setShowConfirn(true)}>Підтвердіть свою дію</button>
-      <button onClick={() => setShowError(true)}>У вас сталася помилка</button>
-      <button onClick={() => setShowInfo(true)}>Оримайте інформацію</button>
+      <ButtonStyleBlue onClick={() => setShowConfirn(true)}>
+        Підтвердіть свою дію
+      </ButtonStyleBlue>
+      <ButtonStyleGreen onClick={() => setShowError(true)}>
+        У вас сталася помилка
+      </ButtonStyleGreen>
+      <ButtonStyleRed onClick={() => setShowInfo(true)}>
+        Оримайте інформацію
+      </ButtonStyleRed>
       {showConfirn && (
         <Modal
           title="Підтвердіть дію"
