@@ -231,11 +231,11 @@ function App() {
             <BrowserRouter>
               <nav className="bg-green-800 rounded-lg p-4">
                 <ul className="text-white flex flex-wrap justify-center space-x-4">
-                  {/* <li>
+                  <li>
                     <Link className="hover:bg-rose-600" to="/modal">
                       Приклади моделі
                     </Link>
-                  </li> */}
+                  </li>
                   <li>
                     <Link className="hover:bg-orange-600" to="/card">
                       Картки
@@ -254,7 +254,7 @@ function App() {
                 </ul>
               </nav>
               <Routes>
-                {/* <Route path="/modal" element={} /> */}
+                <Route path="/modal" element={<ModalContainer />} />
                 <Route path="/card" element={<CardContainer />} />
                 <Route path="/userInput" element={<UserInput />} />
                 <Route path="/footer" element={<Footer />} />
@@ -328,7 +328,7 @@ function App() {
                 Панель інструментів
               </button>
             </ThemeContext.Provider>
-            <ModalContainer />
+          
             <JokeFetch />
           </UserContext.Provider>
         </Provider>

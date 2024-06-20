@@ -25,8 +25,8 @@ const CountReducer = (state = { counter: 0 }, action) => {
       return { counter: state.counter - action.payload };
     case RESET:
       return { counter: 0 };
-      default:
-        return state;
+    default:
+      return state;
   }
 };
 
@@ -43,7 +43,22 @@ function CounterRedux() {
       <Button type="button" onClick={() => dispatch(subOne())}>
         Відняти 1
       </Button>
-      <button type="button" onClick={() => dispatch(addSome(10))}>
+      <button
+        style={{
+          position: 'absolute',
+          padding: '7px',
+          minHeight: '20px',
+          minWidth: '80px',
+
+          backgroundColor: '#0a0a23',
+          color: '#fff',
+          border: 'none',
+          borderRadius: '10px',
+          boxShadow: '0px 0px 2px 2px rgb(0, 0, 0)',
+        }}
+        type="button"
+        onClick={() => dispatch(addSome(10))}
+      >
         Додати 10
       </button>
       <button type="button" onClick={() => dispatch(subSome(10))}>

@@ -1,44 +1,12 @@
- imp
- /* body {
-    margin:0;
-    background-color:#191919;
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-family:Helvetica,Sans-serif;
-  }
-  a {
-    text-decoration:none;
-    color:#FFF;
-  } */
-    .rainbow-button {
-        width:calc(20vw + 6px);
-        height:calc(8vw + 6px);
-        background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
-        border-radius:5px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        text-transform:uppercase;
-        font-size:3vw;
-        font-weight:bold;
-      }
-      .rainbow-button:after {
-        content:attr(alt);
-        width:20vw;
-        height:8vw;
-        background-color:#191919;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-      }
-      .rainbow-button:hover {
-        animation:slidebg 2s linear infinite;
-      }
-      
-      /* @keyframes slidebg {
-        to {
-          background-position:20vw;
-        } */
-      /* } */
+<!-- .button {
+    position: absolute;
+    padding: 7px;
+    min-height: 20px;
+    min-width: 80px;
+  
+    background-color: #0a0a23;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px 2px rgb(0, 0, 0);
+  } -->

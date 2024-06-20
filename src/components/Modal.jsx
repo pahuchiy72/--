@@ -1,8 +1,8 @@
 function Modal(props) {
   return (
-    <div className="modal">
+    <div  className="modal">
       <div className="modal-header">
-        <h3 className="modal-title">{props.title}</h3>
+        <h3 className="modal-title bg-pink-400 border-4 border-pink-600 p-4 inline-block">{props.title}</h3>
         <button
           style={{
             backgroundColor: '#4CAF50' /* Green */,
@@ -24,7 +24,7 @@ function Modal(props) {
         </button>
       </div>
       <div className="modal-body">
-        <p className="modal-message">{props.message}</p>
+        <p className="modal-message bg-teal-400 border-4 border-teal-600 p-4 inline-block">{props.message}</p>
       </div>
     </div>
   );
