@@ -20,23 +20,12 @@ function Joke() {
 
   return (
     <div>
-      <p
-        style={{
-          fontFamily: 'Arial, Verdana, Helvetica, sans-serif',
-          fontSize: '90%',
-          background: 'PaleGoldenRod',
-          color: 'black',
-          display: 'inline-block',
-        }}
-      >
+      <p className="h-12 w-auto font-bold  p-3 bg-gradient-to-r from-blue-400 to-gray-100 in">
         Привітання, {user.names}
       </p>
-      <p  style={{
-          fontFamily: 'Arial, Verdana, Helvetica, sans-serif',
-          fontSize: '90%',
-          background: 'Thistle',
-          color: 'black',
-        }}>Жарт про Чака Норріса: {data.value}</p>
+      <p className="h-12 w-auto p-3 font-bold bg-gradient-to-r from-transparent to-blue-400">
+        Жарт про Чака Норріса: {data.value}
+      </p>
     </div>
   );
 }
