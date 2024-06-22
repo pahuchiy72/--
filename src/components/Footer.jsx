@@ -6,9 +6,12 @@ export default function Footer() {
 
   return (
     <div>
-      <h2>Ваші уподобання</h2>
-      <p>Тема: {user.preferences.theme}</p>
-      <p>Мова користувача: {user.preferences.language}</p>
+      <h2 className='border-2 text-rose-700 font-bold border-sky-400 bg-sky-200 
+            p-2 inline-block rounded-xl'>Ваші уподобання</h2>
+      <p className='border-2 text-rose-700 font-bold border-sky-400 bg-sky-200 
+            p-2 inline-block rounded-xl'>Тема: {user.preferences.theme}</p>
+      <p className='border-2 text-rose-700 font-bold border-sky-400 bg-sky-200 
+            p-2 inline-block rounded-xl'>Мова користувача: {user.preferences.language}</p>
     </div>
   );
 }

@@ -45,7 +45,7 @@ import JokeFetch from './components/JokeFetch.jsx';
 import { Button } from './components/Button/ButtonStyle2.jsx';
 
 function Welcome(props) {
-  return <h1>Знову Вітаю {props.name} </h1>;
+  return <h1 class="rounded w-auto font-bold text-center  bg-teal-400 p-4">Знову Вітаю {props.name} </h1>;
 }
 const users = {
   name: "М'ячмен",
@@ -323,7 +323,7 @@ function App() {
               <button
                 type="button"
                 className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none
-                 focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center 
+                 focus:ring-blue-300 font-medium rounded-xl text-sm p-2.5 text-center inline-flex items-center 
                  me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 onClick={toogleTheme}
               >
