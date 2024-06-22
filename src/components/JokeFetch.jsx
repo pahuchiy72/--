@@ -10,8 +10,8 @@ function JokeFetch() {
   if (error) return <p> якась помилка: {error.message}</p>;
   return (
     <div>
-      <h1 className='border-4 border-orange-600 bg-orange-400 p-2 inline-block'>Чак Норріс</h1>
-      <p className='border-4 border-yellow-600 bg-yellow-400 p-2 inline-block'> Новий жарт про Чака: {data.value}</p>
+      <h1 className='border-4 font-bold border-orange-600 bg-orange-400 p-2 inline-block'>Чак Норріс</h1>
+      <p className='border-4 font-bold border-yellow-600 bg-yellow-400 p-2 inline-block'> Новий жарт про Чака: {data.value}</p>
     </div>
   );
 }
