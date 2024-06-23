@@ -3,7 +3,6 @@ import ReactDom from 'react-dom/client';
 import { BrowserRouter, Route, Link, Routes } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import Switch from 'react-switch';
- 
 
 import Counter1 from './components/Counter1.jsx';
 import CounterFunc from './components/CounterFunc.jsx';
@@ -45,7 +44,22 @@ import JokeFetch from './components/JokeFetch.jsx';
 import { Button } from './components/Button/ButtonStyle2.jsx';
 
 function Welcome(props) {
-  return <h1 class="rounded w-auto font-bold text-center  bg-teal-400 p-4">Знову Вітаю {props.name} </h1>;
+  return (
+    <h1
+      style={{
+        borderRadius: '4px',
+        fontWeight: '700',
+        width: '288px',
+        textAlign: 'center',
+        backgroundColor: 'chartreuse',
+        padding: '16px',
+        marginTop: '-56px',
+        marginLeft: '1200px',
+      }}
+    >
+      Знову Вітаю {props.name}
+    </h1>
+  );
 }
 const users = {
   name: "М'ячмен",
@@ -311,7 +325,7 @@ function App() {
                   </ul>
                 </nav>
                 <Routes>
-                  <Route path="list" element={ <TeamList teams={teams} />} />
+                  <Route path="list" element={<TeamList teams={teams} />} />
                   <Route
                     path="/temperature"
                     element={<TemperatureConverter />}
@@ -319,7 +333,7 @@ function App() {
                   <Route path="/tolbar" element={<Toolbar />} />
                 </Routes>
               </BrowserRouter>
-             
+
               <button
                 type="button"
                 className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none
@@ -330,7 +344,7 @@ function App() {
                 Панель інструментів
               </button>
             </ThemeContext.Provider>
-          
+
             <JokeFetch />
           </UserContext.Provider>
         </Provider>

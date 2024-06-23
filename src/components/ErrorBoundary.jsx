@@ -18,7 +18,7 @@ export default class ErrorBoundary extends React.Component {
     if (this.state.hasError) {
       return (
         <h1
-          className="mb-2 mt-0 text-5xl font-medium leading-tight text-primary
+          className="mb-2 mt-0 text-5xl font-medium leading-tight  
            shadow-black bg-lime-200 italic text-red-900"
         >
           щось пішло не так 🤬 а а а що робити !?!?
